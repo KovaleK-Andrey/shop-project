@@ -176,4 +176,89 @@ body {
    text-align: center;
 }
 
+/* Popular ========= */
+
+.popular__title {
+   margin-top: 97px;
+
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 30px;
+   font-weight: normal;
+   line-height: 1.2;
+   color: #222222;
+}
+
+.popular__subtitle {
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 1.2;
+   color: #9F9F9F;
+}
+
+.exhibition {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.exhibition-item {
+   width: 360px;
+   height: 581px;
+
+   margin-top: 47px;
+
+   background: #F8F8F8;
+}
+
+.exhibition-title {
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 1.2;
+   color: #000;
+   text-transform: uppercase;
+   margin: 25px 0 0 18px;
+}
+
+.exhibition-text {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.2;
+   color: #5d5d5d;
+
+   margin: 13px 29px 0 17px;
+}
+
+.exhibition-price {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.2;
+   color:#F16D7F;
+   
+   margin: 18px 0 0 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
