@@ -74,11 +74,11 @@ body {
    margin: 0 34px 0 0;
 }
 
-.name {
+.intra {
    display: flex;
 }
 
-.name__header-span {
+.intra__header-span {
    font-size: 32px;
    font-style: normal;
    font-weight: 700;
@@ -86,7 +86,10 @@ body {
    color: var(--pink-color);
 }
 
-.name__header {
+.intra__header {
+   position: relative;
+   padding: 0 0 0 28px;
+
    font-size: 48px;
    font-style: normal;
    font-weight: 900;
@@ -94,18 +97,13 @@ body {
    text-transform: uppercase;
 }
 
-.name__content {
+.intra__content {
    width: 100%;
    padding: 335px 0 0 64px;
    background-color: var(--pink-background);
 }
 
-.name__header {
-   position: relative;
-   padding: 0 0 0 28px;
-}
-
-.name__header::before{
+.intra__header::before{
    position: absolute;
    content: '';
    width: 12px;
