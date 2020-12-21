@@ -415,14 +415,27 @@ padding-top: 28px;
 }
 
 .footer__social-link {
-   width: 31.45px;
-   height: 32px;
+   font-size: 14px;
+   text-decoration: none;
+   margin-right: 7px;
    background-color: #fff;
-   margin-left: 7px;
+   padding: 9px 9px 7px 10px;
+   border: 1px #ccc solid;
+   
 }
 
+.active-link {
+   font-size: 14px;
+   text-decoration: none;
+   margin-right: 7px;
+   background-color: #F16D7F;
+   padding: 9px 9px 7px 10px;
+   border: 1px rgb(241, 68, 106) solid;
+}
 
-
+.footer__social-link:last-child {
+   margin-right: 0;
+}
 
 
 
