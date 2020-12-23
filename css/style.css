@@ -421,15 +421,18 @@ padding-top: 28px;
    align-items: center;
 }
 
+.footer__social-list {
+   margin-left: 7.3px;
+}
+
 .footer__social-btn {
    width: 31.5px;
    height: 32px;
    background-color: #fff;
    border: none;
-   margin-left: 7.3px;
 }
 
-.footer__social-btn:first-child {
+.footer__social-list:first-child {
    margin-left: 0px;
 }
 
