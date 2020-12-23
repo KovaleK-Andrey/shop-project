@@ -588,6 +588,132 @@ padding-top: 28px;
    background-color: #F16D7F;
    fill: #fff;
 }
+/* /Footer ====================== */
+
+/* Page2 - Catalog================= */
+
+.catalog__navigation {
+   height: 148px;
+   background: #F8F3F4;
+}
+
+.catalog__navigation-content {
+   height: 148px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.catalog__navigation-title {
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: #F16D7F;
+}
+
+.catalog__navigation-item {
+   display: flex;
+}
+
+.catalog__navigation-link {
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 1.2;
+   font-weight: 700;
+   color: #636363;
+   text-transform: uppercase;
+   margin-left: 6px;
+}
+
+.catalog__navigation-span {
+   margin-left: 3px;
+}
+
+.catalog__navigation-link:hover {
+   color: black;
+   transition: .2s linear;
+}
+
+.catalog__navigation-list--active:hover {
+   color: var(--pink-color);
+   text-decoration: underline;
+}
+
+.catalog__navigation-list--active {
+   color: var(--pink-color);
+}
+
+/* Filter ============*/
+
+.filter  {
+   display: flex;
+   align-items: center;
+   height: 85px;
+}
+
+.filter-link {
+   font-size: 16px;
+   line-height: 1.2;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #000;
+   fill: #000;
+}
+
+.filter-link:hover,
+.filter-link:focus,
+.filter-link:active {
+   fill:  #F16D7F;
+   color:  #F16D7F;
+   transition: .2s linear;
+}
+
+.filter__svg {
+   margin-left: 10px;
+}
+
+.filter__clarification {
+   margin-left: 290px;
+}
+
+.filter__clarification-item {
+   display: flex;
+}
+
+.filter__clarification-link {
+   font-size: 14px;
+   line-height: 1.2;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #6F6E6E;
+   fill: #6F6E6E;
+   margin-left: 28px;
+}
+
+.filter__clarification-link:hover,
+.filter__clarification-link:focus,
+.filter__clarification-link:active {
+   color: #525050;
+   fill: #525050;
+   transition: .2s linear;
+}
+
+.slider {
+   width: 283px;  
+   height: 43px;
+   border: 1px solid #EBEBEB;
+   border-radius: 3px;
+   margin-top: 48px;
+   margin-bottom: 96px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+}
+
+
 
 
 
