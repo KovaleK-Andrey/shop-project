@@ -819,6 +819,7 @@ padding-top: 28px;
    color: #fff;
    padding: 16px 20px 17px 29px;
    border: none;
+   outline: 1px solid #FFF;
 }
 
 .button__svg:nth-child(1) {
@@ -838,6 +839,47 @@ padding-top: 28px;
 .registration-btn:hover .button__svg {
    fill: #FF6A6A;
    transition: .1s linear;
+}
+
+.registration__perks {
+   width: 652px;
+   margin-top: 64px;
+}
+
+.registration__perks-title {
+   font-size: 24px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   color: #000;
+   font-weight: 300;
+}
+
+.registration__perks-text {
+   margin-top: 22px;
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 300;
+}
+
+.registration__perks-list {
+   position: relative;
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 300;
+   margin-top: 16px;
+   margin-left: 39px;
+   padding-left: 4px;
+}
+
+.registration__perks-list:first-child {
+   margin-top: 21px;
+}
+
+.registration__perks-list::before {
+   display: block;
+   position: absolute;
+   content: url(../img/checkmark.png);
+   left: -33px;
 }
 
 
