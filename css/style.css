@@ -496,12 +496,12 @@ padding-top: 28px;
 }
 
 .footer__subscribe-input:hover {
-   background: rgb(201, 230, 241);
+   background: rgb(250, 177, 207);
    transition: .2s linear;
 }
 
 .footer__subscribe-input:focus {
-   background: rgb(201, 230, 241);
+   background:rgb(250, 177, 207);
    color: #222224;
    transition: .2s linear;
 }
@@ -755,7 +755,7 @@ padding-top: 28px;
 .registration__input-name:hover,
 .registration__input-name:focus,
 .registration__input-name:active {
-   background: rgb(201, 230, 241);
+   background:rgb(250, 177, 207);
    transition: .2s linear;
 }
 
@@ -999,12 +999,12 @@ padding-top: 28px;
 }
 
 .shopping__cart-input:hover {
-   background: rgb(201, 230, 241);
+   background: rgb(250, 177, 207);
    transition: .2s linear;
 }
 
 .shopping__cart-input:focus {
-   background: rgb(201, 230, 241);
+   background:rgb(250, 177, 207);
    color: #222224;
    transition: .2s linear;
 }
