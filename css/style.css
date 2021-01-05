@@ -1092,3 +1092,26 @@ body {
   outline: 1px solid #FF6A6A;
   transition: .2s linear;
 }
+
+.demonstration {
+  width: 100%;
+  height: 777px;
+  background-image: url(../img/demonstration-slide.jpg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.demonstration-btn {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  border: none;
+  outline: none;
+}
+
+.demonstration-btn:hover {
+  cursor: pointer;
+  background-color: #e4b2ba;
+  transition: .2s linear;
+}
