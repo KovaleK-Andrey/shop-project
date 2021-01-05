@@ -1,0 +1,74 @@
+.intra {
+    display: flex;
+    position: relative;
+    &__content-span {
+        @include font(32px, 1.2, 700);
+        font-style: normal;
+        color: $pink-color;
+    }
+    &__content-title {
+        position: relative;
+        padding: 0 0 0 28px;
+        @include font(48px, 1.2, 900);
+        font-style: normal;
+        text-transform: uppercase;
+        &:before{
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 100%;
+            background-color: $pink-color;
+            left: -12px;
+        }
+    }
+    &__content {
+        width: 100%;
+        padding: 335px 0 0 64px;
+        background-color: #F1E4E6;
+    }
+    &__menu {
+        width: 232px;
+        height: 765px;
+        background: $white-color;
+        box-shadow: 0 18px 33px #ccc;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__menu-title {
+        @include font(14px, 1.2, 700);
+        color: $black-color;
+        text-transform: uppercase;
+        margin-top: 37px;
+        margin-left: 34px;
+    }
+    &__menu-item {
+        margin: 22px 0 0 34px;
+    }
+    &__menu-mainlink {
+        display: block;
+        text-transform: uppercase;
+        @include font(14px, 1.2, 400);
+        color: $pink-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            text-shadow: 0 1px 26px #FF6A6A;
+            transition: .2s linear;
+        }
+    }
+    &__menu-link {
+        display: block;
+        @include font(14px, 1.2, 400);
+        text-transform: capitalize;
+        color: #6F6E6E;
+        text-decoration: none;
+        margin-left: 19.5px;
+        margin-top: 12px;
+        &:hover {
+            text-decoration: underline;
+            text-shadow: 0 1px 26px #6F6E6E;
+            transition: .2s linear;
+        }
+    }
+}

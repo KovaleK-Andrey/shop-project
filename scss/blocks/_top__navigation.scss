@@ -1,0 +1,38 @@
+.top__navigation {
+    height: 148px;
+    background: #F8F3F4;
+    &-content {
+        height: 148px;
+        @include flex-spbn;
+        align-items: center;
+    }
+    &-title {
+        @include font(24px, 1.2, 400);
+        text-transform: uppercase;
+        color: $pink-color;
+    }
+    &-item {
+        display: flex;
+    }
+    &-link {
+        text-decoration: none;
+        @include font(14px, 1.2, 700);
+        color: #636363;
+        text-transform: uppercase;
+        margin-left: 6px;
+        &:hover {
+            color: $black-color;
+            transition: .2s linear;
+         }
+    }
+    &-span {
+        margin-left: 3px;
+    }
+    &-list--active {
+        color: $pink-color;
+        &:hover {
+            color: #F16D7F;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.popular {
+    &__title {
+        margin-top: 97px;
+        text-align: center;
+        text-transform: capitalize;
+        @include font(30px, 1.2, 400);
+        color: $header-bg;
+    }
+    &__subtitle {
+        text-align: center;
+        text-transform: capitalize;
+        @include font(14px, 1.2, 400);
+        color: #9F9F9F;
+        margin-top: 6px;
+    }
+    &__more {
+        display: block;
+        width: 211px;
+        margin: 48.5px auto 95.5px;
+        padding: 14px 34px;
+        @include font(16px, 1.2, 400);
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #F26376;
+        border: 1px solid #FF6A6A;
+        &:hover {
+            color: #FFF;
+            background: #FF6A6A;
+            transition: .2s linear;
+            cursor: pointer;
+        }
+    }
+}
+.exhibition {
+    @include flex-spbn;
+    flex-wrap: wrap;
+    &-item {
+        position: relative;
+        width: 360px;
+        height: 581px;
+        margin-top: 47px;
+        background: $grey-bg-color;
+        &:hover .exhibition-addlink {
+            opacity: 1;
+            transition: .2s linear;
+            box-shadow: 2px 2px 10px #fff;
+            transition: .2s linear;
+        }
+        &:hover .exhibition-link {
+            filter: brightness(50%);
+            transition: .2s linear;
+        } 
+    }
+    &-link {
+        display: block;
+    }
+    &-addtext {
+        margin-left: 11px;
+    }
+    &-addlink {
+        position: absolute;
+        opacity: 0;
+        top: 34%;
+        left: calc(50% - 70px);
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        @include font(14px, 1.2, 400);
+        text-decoration: none;
+        padding: 10px 16px 8px 13px;
+        border: 1px solid $white-color;
+        &:hover {
+            filter: brightness(75%);
+            box-shadow: 3px 3px 15px #fff;
+            transition: .2s linear;
+        }
+    }
+    &__link-title {
+        text-decoration: none;
+        @include font(13px, 1.2, 400);
+        color: $black-color;
+        text-transform: uppercase;
+        margin: 25px 0 0 18px;
+        &:hover {
+            color: $pink-color;
+        }
+    }
+    &-title {
+        @include font(13px, 1.2, 400);
+        color: $black-color;
+        text-transform: uppercase;
+        margin: 25px 0 0 18px;
+    }
+    &-text {
+        @include font(14px, 1.2, 300);
+        color: $grey-text-color;
+        margin: 13px 29px 0 17px;
+    }
+    &-price {
+        @include font(16px, 1.2, 400);
+        color:$pink-color;
+        margin: 18px 0 0 18px;
+    }
+}
