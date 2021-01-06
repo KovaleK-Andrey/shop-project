@@ -1,0 +1,132 @@
+.visual-item__catalog {
+    visibility: hidden;
+}
+ 
+.registration {
+    @include flex-spbn;
+    &-content {
+        width: 360px;
+    }
+    &-form {
+        margin-top: 64px;
+    }
+    &-fieldset {
+        border: none;
+        text-transform: capitalize;
+    }
+    &-legend {
+        @include font(16px, 1.2, 300);
+        color: $header-bg;
+    }
+    &__input-name {
+        padding: 13px 16px;
+        margin-top: 20px;
+        font-family: 'Lato', 'Arial', sans-serif;
+        width: 360px;
+        display: block;
+        @include font(13px, 1.2, 300);
+        color: $header-bg;
+        border: none;
+        outline: 1px solid #A4A4A4;
+        &:hover,
+        &:focus,
+        &:active {
+            background:rgb(250, 177, 207);
+            transition: .2s linear;
+        }
+    }
+    &__input-sex {
+        display: none;
+        &:checked+.registration__label-sex:before {
+            background: rgb(0, 0, 0);
+        }
+    }
+    &__label-sex {
+        position: relative;
+        margin-top: 33.5px;
+        display: inline-block;
+        margin-left: 47px;
+        @include font(11px, 1.2, 300);
+        color: $black-color;
+        text-transform: capitalize;
+        &:before {
+            position: absolute;
+            content: "";
+            left: -27px;
+            top: -2px;
+            border: 1px solid #A4A4A4;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+        }
+        &:nth-child(5) {
+            margin-left: 27px;
+        }
+    }
+    &__login {
+        margin-top: 34px;
+    }
+    &-notification {
+        margin: 15px 0 39px 0;
+        @include font(13px, 1.2, 300);
+        color: #B1B1B1;
+    }
+    &-btn {
+        display: block;
+        width: 167px;
+        margin-bottom: 96px;
+        font-family: 'Lato', 'Arial', sans-serif;
+        @include font(14px, 1.2, 400);
+        text-transform: uppercase;
+        background: $pink-color;
+        color: $white-color;
+        padding: 16px 20px 17px 29px;
+        border: none;
+        outline: 1px solid $white-color;
+        &:hover {
+            color: #FF6A6A;
+            background: $white-color;
+            transition: .2s linear;
+            cursor: pointer;
+            outline: 1px solid #FF6A6A;
+            transition: .2s linear;
+        }
+        &:hover .button__svg {
+            fill: #FF6A6A;
+            transition: .1s linear;
+        }
+    }
+    &__perks {
+        width: 652px;
+        margin-top: 64px;
+        &-title {
+            @include font(24px, 1.2, 300);
+            text-transform: uppercase;
+            color: $black-color;
+        }
+        &-text {
+            margin-top: 22px;
+            @include font(24px, 1.2, 300);
+        }
+        &-list {
+            position: relative;
+            @include font(24px, 1.2, 300);
+            margin-top: 16px;
+            margin-left: 39px;
+            padding-left: 4px;
+            &:first-child {
+                margin-top: 21px;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                content: url(../img/checkmark.png);
+                left: -33px;
+            }
+        }
+    }
+}
+.button__svg:nth-child(1) {
+    margin-left: 20px; 
+    fill: #fff;
+}

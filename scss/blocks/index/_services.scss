@@ -1,0 +1,33 @@
+.services {
+    height: 341px;
+    background-color: $header-bg;
+    &__catalog {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__catalog-img {
+        margin: 103px 0 0 158px;
+    }
+    &__catalog-img2 {
+        margin: 93px 0 0 158px;
+    }
+    &__catalog-img3 {
+        margin: 96px 0 0 158px;
+    }
+    &__catalog-item {
+        width: 360px;
+    }
+    &__catalog-title {
+        padding-top: 28px;
+        @include font(20px, 1.2, 400);
+        text-align: center;
+        color: #fbfbfb;
+        text-transform: capitalize;
+    }
+    &__catalog-text {
+        padding-top: 15px;
+        @include font(14px, 1.2, 300);
+        text-align: center;
+        color: #fbfbfbdc;
+    }
+}

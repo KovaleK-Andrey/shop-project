@@ -1,3 +1,15 @@
-body {
-    color: #000;
-}
+@import './variables';
+@import './mixins';
+@import './common';
+@import './blocks/header';
+@import './blocks/index/intra';
+@import './blocks/index/stock';
+@import './blocks/index/popular';
+@import './blocks/index/services';
+@import './blocks/footer';
+@import './blocks/top__navigation';
+@import './blocks/catalog/filter';
+@import './blocks/registration/registration';
+@import './blocks/cart/shopping__cart';
+@import './blocks/product/demonstration';
+@import './blocks/product/lot__description';
