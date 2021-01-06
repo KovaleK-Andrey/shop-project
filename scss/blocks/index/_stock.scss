@@ -82,6 +82,9 @@
     }
     @include phone {
         background-image: url(../img/forkids_bg.jpg);
+       background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
         height: 111px;
         margin-top: 32px;
     }

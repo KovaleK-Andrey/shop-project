@@ -345,6 +345,9 @@ body {
   @media (min-width: 375px) and (max-width: 767px) {
     .last__stock {
       background-image: url(../img/forkids_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       height: 111px;
       margin-top: 32px; } }
   @media (min-width: 375px) and (max-width: 767px) {
