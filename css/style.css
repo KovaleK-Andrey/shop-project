@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1218,4 +1219,8 @@ body {
 .description {
   margin-left: calc(50% - 234px);
   margin-top: 120px;
+}
+=======
+body {
+  color: #000;
 }
