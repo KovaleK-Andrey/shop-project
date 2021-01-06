@@ -6,6 +6,9 @@
             width: 50%;
             height: auto;
         }
+        @include phone {
+            display: none;
+        }
     }
     &__content-span {
         @include font(32px, 1.2, 700);
@@ -16,6 +19,10 @@
         }
         @include table {
             @include font(24px, 29px, 700)
+        }
+        @include phone {
+            display: inline-block;
+            @include font(20px, 37px, 700);
         }
     }
     &__content-title {
@@ -29,20 +36,22 @@
             position: absolute;
             content: '';
             width: 12px;
-            height: 92px;
+            min-height: 92px;
             background-color: $pink-color;
             left: -12px;
             top: -4px;
-            @include table {
-                
+            @include phone {
+                min-height: 61px;
             }
-            
         }
         @include table {
             display: inline-block;
             @include font(44px, 37px, 900);
         }
-        
+        @include phone {
+            display: inline-block;
+            @include font(38px, 28px, 900);
+        }
     }
     &__content {
         width: 100%;
@@ -50,6 +59,9 @@
         background-color: #F1E4E6;
         @include table {
             padding: 138px 0 0 40px;
+        }
+        @include phone {
+            padding: 148px 0 149px 56px;
         }
     }
     &__menu {
@@ -63,6 +75,9 @@
         @include table {
             display: none;
         }
+        @include phone {
+            display: none;
+         }
     }
     &__menu-title {
         @include font(14px, 1.2, 700);

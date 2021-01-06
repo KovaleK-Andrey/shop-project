@@ -3,6 +3,9 @@
     @include table {
         margin-top: 19px;
     }
+    @include phone {
+        margin-top: 32px;
+    }
     &__list {
         @include flex-spbn;
         flex-wrap: wrap;
@@ -28,6 +31,9 @@
             @include table {
                 width: 100%;
             }
+            @include phone {
+                width: 100%;
+            }
         }
         &-content {
             position: absolute;
@@ -36,15 +42,27 @@
             @include table {
                 top: -42px;
             }
+            @include phone {
+                top: 30px;
+            }
         }
         &-img {
             @include table {
                 width: 100%;
             }
+            @include phone {
+                width: 100%;
+                height: 100%;
+            }
         }
         @include table {
             width: 31.5%;
             height: auto;
+        }
+        @include phone {
+            padding-top: 32px;
+            width: 100%;
+            height: 100%;
         }
     }
  }
@@ -56,7 +74,20 @@
 .last__stock {
     padding-top: 30px;
     &-content {
-        
+        top: -40px;
         left: calc(50% - 80px);
+        @include phone {
+            display: none;
+        }
+    }
+    @include phone {
+        background-image: url(../img/forkids_bg.jpg);
+        height: 111px;
+        margin-top: 32px;
+    }
+    &-img {
+        @include phone {
+            display: none;
+        }
     }
 }

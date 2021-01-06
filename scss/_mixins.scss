@@ -14,3 +14,9 @@
         @content;
     }
 }
+
+@mixin phone {
+    @media (min-width: 375px) and (max-width: 767px) {
+        @content;
+    }
+}

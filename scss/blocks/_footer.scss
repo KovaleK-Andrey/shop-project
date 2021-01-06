@@ -12,10 +12,16 @@
         @include table {
             flex-direction: column;
         }
+        @include phone {
+            flex-direction: column;
+        }
     }
     &__content-img {
         margin: 97px 0 0 120px;
         @include table {
+            margin: 54px 0 0 120px;
+        }
+        @include phone{
             margin: 54px 0 0 120px;
         }
     }
@@ -33,6 +39,9 @@
         @include table {
             margin-top: 20px;
         }
+        @include phone {
+            margin-top: 20px;
+        }
     }
     &__content-italic {
         font-style: italic;
@@ -43,16 +52,28 @@
         @include table {
             margin-top: 68px;
         }
+        @include phone {
+            margin-top: 59px;
+        }
     }
     &__subscribe-title {
         @include font(24px, 1.6, 700);
         color: $header-bg;
         text-transform: uppercase;
+        @include table {
+            @include font(18px, 1.6, 700);
+        }
+        @include phone {
+            @include font(24px, 1.6, 700);
+        }
     }
     &__subscribe-subtitle {
         @include font(18px, 1.6, 400);
         color: $header-bg;
         text-transform: uppercase;
+        @include phone {
+            @include font(14px, 1.6, 400);
+        }
     }
     &__subscribe-input {
         width: 322px;
@@ -72,6 +93,9 @@
             background: rgba(188, 248, 240, 0.589);
             color: $header-bg;
             transition: .2s linear;
+        }
+        @include phone {
+           width: 70%;
         }
     }
     &__subscribe-area {
@@ -96,22 +120,31 @@
         }
     }
     &__social {
-        height: 79px;
+        min-height: 79px;
         margin-top: 149px;
         background-color: $header-bg;
         @include table {
             margin-top: 140px;
         }
+        @include phone {
+            margin-top: 109px;
+        }
     }
     &__social-item{
         @include flex-spbn;
         align-items: center;
-        height: 79px;
+        min-height: 79px;
+        @include phone {
+            flex-direction: column-reverse;
+        }
     }
     &__social-content-text {
         color: #fbfbfb;
         @include font(16px, 1.2, 400);
         text-transform: capitalize;
+        @include phone {
+            margin: 40px 0 9px 0;
+        }
     }
     &__social-icon {
         display: flex;
@@ -119,6 +152,11 @@
     }
     &__social-list {
         margin-left: 7.3px;
+        @include phone {
+            display: block;
+            padding-top: 20px;
+        }
+
     }
     &__social-btn {
         width: 31.5px;

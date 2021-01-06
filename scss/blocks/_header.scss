@@ -6,7 +6,12 @@
         align-items: center;
         @include table {
             width: 91.5%;
+            margin: 0 auto;
         }
+        @include phone {
+            width: 91.4%;
+            margin: 0 auto;
+         }
     }
     &__logo {
         margin: 0 41px 0 0;
@@ -33,8 +38,20 @@
     }
     &__menu-item:not(:last-of-type) {
         margin: 0 34px 0 0;
+        @include phone {
+            margin: 0;
+        }
+    }     
+}
+.account__header-menu{
+    @include phone {
+        display: none;
     }
-     
+}
+.cart__header-menu {
+    @include phone {
+        display: none;
+    }
 }
 
 
