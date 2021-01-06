@@ -1,21 +1,38 @@
 .footer {
     width: 100%;
-    height: 527px;
+    @include table {
+        height: 100%;
+    }
     background-image: url(../img/subscribe-fon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     &__content-item {
         @include flex-spbn;
+        @include table {
+            flex-direction: column;
+        }
     }
     &__content-img {
         margin: 97px 0 0 120px;
+        @include table {
+            margin: 54px 0 0 120px;
+        }
     }
     &__content-review {
         width: 360px;
+        @include table {
+            margin: 0 auto;
+        }
     }
     &__content-text {
         margin-top: 30px;
         @include font(20px, 1.2, 400);
         color: $header-bg;
         text-align: center;
+        @include table {
+            margin-top: 20px;
+        }
     }
     &__content-italic {
         font-style: italic;
@@ -23,6 +40,9 @@
     &__subscribe {
         margin-top: 150px;
         text-align: center;
+        @include table {
+            margin-top: 68px;
+        }
     }
     &__subscribe-title {
         @include font(24px, 1.6, 700);
@@ -45,11 +65,11 @@
         font-size: 14px;
         font-family: 'Lato', 'Arial', sans-serif;
         &:hover {
-            background: rgb(250, 177, 207);
+            background: rgba(188, 248, 240, 0.589);
             transition: .2s linear;
         }
         &:focus {
-            background:rgb(250, 177, 207);
+            background: rgba(188, 248, 240, 0.589);
             color: $header-bg;
             transition: .2s linear;
         }
@@ -79,6 +99,9 @@
         height: 79px;
         margin-top: 149px;
         background-color: $header-bg;
+        @include table {
+            margin-top: 140px;
+        }
     }
     &__social-item{
         @include flex-spbn;
@@ -117,6 +140,12 @@
     }
     &__social-list:first-child {
         margin-left: 0px;
+    }
+}
+.social__container {
+    @include table {
+        margin: 0 auto;
+        width: 91.5%;
     }
 }
 .product__footer {

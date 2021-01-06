@@ -1,21 +1,39 @@
 .services {
-    height: 341px;
+    min-height: 341px;
     background-color: $header-bg;
     &__catalog {
         display: flex;
         justify-content: space-around;
+        @include table {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__catalog-img {
         margin: 103px 0 0 158px;
+        @include table {
+            margin: 48px 0 0 158px;
+        }
     }
     &__catalog-img2 {
         margin: 93px 0 0 158px;
+        @include table {
+            margin: 48px 0 0 158px;
+        }
     }
     &__catalog-img3 {
         margin: 96px 0 0 158px;
+        @include table {
+            margin: 48px 0 0 158px;
+        }
     }
     &__catalog-item {
         width: 360px;
+        &:last-child {
+            @include table {
+                padding-bottom: 64px;
+            }
+        }
     }
     &__catalog-title {
         padding-top: 28px;

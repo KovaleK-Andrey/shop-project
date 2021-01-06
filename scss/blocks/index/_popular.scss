@@ -1,10 +1,19 @@
 .popular {
+    &__catalog {
+        margin-top: 30px;
+        @include table {
+            margin-top: 55px;
+        }
+    }
     &__title {
         margin-top: 97px;
         text-align: center;
         text-transform: capitalize;
         @include font(30px, 1.2, 400);
         color: $header-bg;
+        @include table {
+            margin-top: 155px;
+        }
     }
     &__subtitle {
         text-align: center;
@@ -29,6 +38,9 @@
             transition: .2s linear;
             cursor: pointer;
         }
+        @include table {
+            margin: 33px auto 65px;
+        }
     }
 }
 .exhibition {
@@ -38,7 +50,7 @@
         position: relative;
         width: 360px;
         height: 581px;
-        margin-top: 47px;
+        margin-top: 17px;
         background: $grey-bg-color;
         &:hover .exhibition-addlink {
             opacity: 1;

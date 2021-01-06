@@ -1,30 +1,56 @@
 .intra {
     display: flex;
     position: relative;
+    &__img {
+        @include table {
+            width: 50%;
+            height: auto;
+        }
+    }
     &__content-span {
         @include font(32px, 1.2, 700);
         font-style: normal;
-        color: $pink-color;
+        color: $header-bg;
+        &--pink {
+            color: $pink-color;
+        }
+        @include table {
+            @include font(24px, 29px, 700)
+        }
     }
     &__content-title {
         position: relative;
-        padding: 0 0 0 28px;
-        @include font(48px, 1.2, 900);
+        color: $header-bg;
+        padding: 0 0 0 16px;
+        @include font(48px, 43px, 900);
         font-style: normal;
         text-transform: uppercase;
         &:before{
             position: absolute;
             content: '';
             width: 12px;
-            height: 100%;
+            height: 92px;
             background-color: $pink-color;
             left: -12px;
+            top: -4px;
+            @include table {
+                
+            }
+            
         }
+        @include table {
+            display: inline-block;
+            @include font(44px, 37px, 900);
+        }
+        
     }
     &__content {
         width: 100%;
         padding: 335px 0 0 64px;
         background-color: #F1E4E6;
+        @include table {
+            padding: 138px 0 0 40px;
+        }
     }
     &__menu {
         width: 232px;
@@ -34,6 +60,9 @@
         position: absolute;
         top: 0;
         right: 0;
+        @include table {
+            display: none;
+        }
     }
     &__menu-title {
         @include font(14px, 1.2, 700);

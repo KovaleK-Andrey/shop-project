@@ -38,35 +38,41 @@ table {
 	border-spacing: 0;
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
  }
  
  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+   clip: rect(0 0 0 0)
  }
  
  body {
-    width: 1600px;
-    margin: 0 auto;
-    background-color: #ffffff;
+   width: 1600px;
+   @include table {
+      width: 100%;
+   }
+   margin: 0 auto;
+   background-color: #ffffff;
  
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
+   font-family: 'Lato', 'Arial', sans-serif;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.2;
  }
  
  .container {
-    width: 1140px;
-    margin: 0 auto;
+   width: 1140px;
+   margin: 0 auto;
+   @include table {
+      width: 95.8%;
+   }
  }

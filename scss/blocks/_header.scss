@@ -4,6 +4,9 @@
         height: 75px;
         @include flex-spbn;
         align-items: center;
+        @include table {
+            width: 91.5%;
+        }
     }
     &__logo {
         margin: 0 41px 0 0;
