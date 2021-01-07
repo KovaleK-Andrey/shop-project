@@ -9,8 +9,14 @@
     font-weight: $font-weight;
 }
 
+@mixin netbook {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin table {
-    @media (min-width: 768px) and (max-width: 1599px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
         @content;
     }
 }

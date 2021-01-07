@@ -4,6 +4,10 @@
         height: 75px;
         @include flex-spbn;
         align-items: center;
+        @include netbook {
+            width: 91.5%;
+            margin: 0 auto;
+        }
         @include table {
             width: 91.5%;
             margin: 0 auto;

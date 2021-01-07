@@ -2,7 +2,15 @@
 .filter  {
     display: flex;
     align-items: center;
-    height: 85px;
+    min-height: 85px;
+    @include table {
+        min-height: 45px;
+    }
+    &-menu {
+        @include phone {
+            margin-left: -9px;
+        }
+    }
     &-link {
         @include font(16px, 1.2, 600);
         text-transform: uppercase;
@@ -17,13 +25,25 @@
             transition: .2s linear;
         }
     }
+    &-span {
+        @include phone {
+            display: none;
+        }
+    }
     &__svg {
         margin-left: 10px;
     }
     &__clarification {
         margin-left: 290px;
+        @include phone {
+            margin-left: 0;
+            padding-bottom: 15px;
+        }
         &-item {
             display: flex;
+            @include phone {
+                margin-left: 10px;
+            }
         }
         &-link {
             @include font(14px, 1.2, 400);
@@ -39,16 +59,30 @@
                 fill: #525050;
                 transition: .2s linear;
             }
+            @include phone {
+                @include font(12px, 1.2, 400);
+                margin-left: 24px;
+            }
         }
     }
  }
+#filter__svgmenu {
+    width: 15px;
+    @include phone {
+        width: 35px;
+    }
+}
 .slider {
-    width: 283px;
-    height: 43px;
+    max-width: 283px;
+    width: 100%;
+    min-height: 43px;
     @include flex-spbn;
     border: 1px solid #EBEBEB;
     border-radius: 3px;
     margin-top: 48px;
     margin-bottom: 96px;
     align-items: center;
+    @include table {
+        margin: 40px auto 63px;
+    }
 }

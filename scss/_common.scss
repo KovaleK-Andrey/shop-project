@@ -56,6 +56,9 @@ table {
  
  body {
    width: 1600px;
+   @include netbook {
+      width: 100%;
+   }
    @include table {
       width: 100%;
    }
@@ -75,6 +78,10 @@ table {
  .container {
    width: 1140px;
    margin: 0 auto;
+   @include netbook {
+      width: 95.5%;
+   }
+
    @include table {
       width: 95.8%;
    }

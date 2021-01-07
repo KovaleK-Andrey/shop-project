@@ -2,6 +2,10 @@
     display: flex;
     position: relative;
     &__img {
+        @include netbook {
+            width: 50%;
+            height: auto;
+        }
         @include table {
             width: 50%;
             height: auto;
@@ -16,6 +20,9 @@
         color: $header-bg;
         &--pink {
             color: $pink-color;
+        }
+        @include netbook {
+            @include font(26px, 29px, 700)
         }
         @include table {
             @include font(24px, 29px, 700)
@@ -44,6 +51,10 @@
                 min-height: 61px;
             }
         }
+        @include netbook {
+            display: inline-block;
+            @include font(46px, 37px, 900);
+        }
         @include table {
             display: inline-block;
             @include font(44px, 37px, 900);
@@ -57,6 +68,9 @@
         width: 100%;
         padding: 335px 0 0 64px;
         background-color: #F1E4E6;
+        @include netbook {
+            padding: 183px 0 0 60px;
+        }
         @include table {
             padding: 138px 0 0 40px;
         }
@@ -72,6 +86,9 @@
         position: absolute;
         top: 0;
         right: 0;
+        @include netbook {
+            display: none;
+        }
         @include table {
             display: none;
         }

@@ -1,6 +1,9 @@
 .popular {
     &__catalog {
         margin-top: 30px;
+        @include netbook {
+            margin-top: 55px;
+        }
         @include table {
             margin-top: 55px;
         }
@@ -14,6 +17,9 @@
         text-transform: capitalize;
         @include font(30px, 1.2, 400);
         color: $header-bg;
+        @include netbook {
+            margin-top: 155px;
+        }
         @include table {
             margin-top: 155px;
         }
@@ -54,6 +60,12 @@
 .exhibition {
     @include flex-spbn;
     flex-wrap: wrap;
+    @include netbook {
+        justify-content: space-around;
+    }
+    @include table {
+        justify-content: space-around;
+    }
     &-item {
         position: relative;
         width: 360px;
@@ -126,5 +138,13 @@
         @include font(16px, 1.2, 400);
         color:$pink-color;
         margin: 18px 0 0 18px;
+    }
+    &-lastitem {
+        @include netbook {
+            display: none;
+        }
+        @include table {
+            display: none;
+        }
     }
 }

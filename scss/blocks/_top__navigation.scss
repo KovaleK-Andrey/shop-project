@@ -1,15 +1,22 @@
 .top__navigation {
-    height: 148px;
+    min-height: 148px;
     background: #F8F3F4;
     &-content {
         height: 148px;
         @include flex-spbn;
         align-items: center;
+        @include phone {
+            flex-direction: column;
+            justify-content: start;
+        }
     }
     &-title {
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
         color: $pink-color;
+        @include phone {
+            margin-top: 24px;
+        }
     }
     &-item {
         display: flex;
