@@ -6,6 +6,20 @@
     background-color: $white-color;
     text-align: center;
     border: 1px solid #EAEAEA;
+    @include phone {
+        width: 100%;
+        height: auto;
+        position: static;
+        border: none;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    @include table {
+        width: 100%;
+        height: auto;
+        position: static;
+        border: none;
+        border-bottom: 1px solid #EAEAEA;
+    }
     &-suptitle {
         position: relative;
         color: $pink-color;
@@ -31,9 +45,11 @@
     &-content {
         color: #5e5e5e;
         @include font(14px, 1.2, 300);
-        width: 555px;
-        margin-left: 292px;
-        margin-top: 48px;
+        max-width: 555px;
+        margin: 48px auto 0;
+        @include phone {
+            width: 87%;
+        }
     }
     &-price {
         @include font(24px, 1.2, 300);
@@ -48,6 +64,11 @@
             background-color: #EAEAEA;
             right: calc(50% - 320px);
             bottom: -65px;
+            @include phone {
+                width: 51%;
+                right: calc(50% - 90px);;
+                bottom: -32px;
+            }
         }
     }
     &-link {
@@ -64,6 +85,12 @@
         &:hover {
             box-shadow: 2px 2px 8px $pink-color;
         }
+        @include table {
+            margin: 65px auto 65px;
+        }
+        @include phone {
+            margin: 65px auto 65px;
+        }
     }
     &-img {
         padding-left: 23px;
@@ -76,4 +103,15 @@
 .description {
     margin-left: calc(50% - 234px);
     margin-top: 120px;
+    @include phone {
+        width: 100%;
+        margin-top: 81px;
+    }
+    &-link {
+        @include phone {
+            font-size: 10px;
+            position: relative;
+            right: -41px;
+        }
+    }
 }

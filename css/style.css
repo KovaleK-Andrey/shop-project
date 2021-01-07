@@ -1205,6 +1205,12 @@ body {
   margin-top: 128px;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .product__footer {
+    margin-top: 64px;
+  }
+}
+
 .top__navigation {
   min-height: 148px;
   background: #F8F3F4;
@@ -1762,8 +1768,11 @@ body {
 
 .demonstration {
   width: 100%;
-  height: 777px;
+  min-height: 777px;
   background-image: url(../img/demonstration-slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1783,6 +1792,12 @@ body {
   transition: .2s linear;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .demonstration {
+    min-height: 624px;
+  }
+}
+
 .lot__description {
   position: relative;
   margin-bottom: 25px;
@@ -1791,6 +1806,26 @@ body {
   background-color: #fff;
   text-align: center;
   border: 1px solid #EAEAEA;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .lot__description {
+    width: 100%;
+    height: auto;
+    position: static;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lot__description {
+    width: 100%;
+    height: auto;
+    position: static;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+  }
 }
 
 .lot__description-suptitle {
@@ -1827,9 +1862,14 @@ body {
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
-  width: 555px;
-  margin-left: 292px;
-  margin-top: 48px;
+  max-width: 555px;
+  margin: 48px auto 0;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .lot__description-content {
+    width: 87%;
+  }
 }
 
 .lot__description-price {
@@ -1851,6 +1891,14 @@ body {
   bottom: -65px;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .lot__description-price::after {
+    width: 51%;
+    right: calc(50% - 90px);
+    bottom: -32px;
+  }
+}
+
 .lot__description-link {
   margin: 49px auto 0;
   display: flex;
@@ -1870,6 +1918,18 @@ body {
   box-shadow: 2px 2px 8px #F16D7F;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lot__description-link {
+    margin: 65px auto 65px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .lot__description-link {
+    margin: 65px auto 65px;
+  }
+}
+
 .lot__description-img {
   padding-left: 23px;
 }
@@ -1881,4 +1941,19 @@ body {
 .description {
   margin-left: calc(50% - 234px);
   margin-top: 120px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .description {
+    width: 100%;
+    margin-top: 81px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .description-link {
+    font-size: 10px;
+    position: relative;
+    right: -41px;
+  }
 }

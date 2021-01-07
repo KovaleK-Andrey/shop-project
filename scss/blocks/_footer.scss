@@ -188,4 +188,7 @@
 }
 .product__footer {
     margin-top: 128px;
+    @include phone {
+        margin-top: 64px;
+    }
 }
