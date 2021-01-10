@@ -53,14 +53,17 @@
         }
         @include netbook {
             display: inline-block;
+            vertical-align: middle;
             @include font(46px, 37px, 900);
         }
         @include table {
             display: inline-block;
+            vertical-align: middle;
             @include font(44px, 37px, 900);
         }
         @include phone {
             display: inline-block;
+            vertical-align: middle;
             @include font(38px, 28px, 900);
         }
     }

@@ -207,18 +207,21 @@ body {
     @media (min-width: 1024px) and (max-width: 1200px) {
       .intra__content-title {
         display: inline-block;
+        vertical-align: middle;
         font-size: 46px;
         line-height: 37px;
         font-weight: 900; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .intra__content-title {
         display: inline-block;
+        vertical-align: middle;
         font-size: 44px;
         line-height: 37px;
         font-weight: 900; } }
     @media (min-width: 375px) and (max-width: 767px) {
       .intra__content-title {
         display: inline-block;
+        vertical-align: middle;
         font-size: 38px;
         line-height: 28px;
         font-weight: 900; } }
@@ -493,7 +496,7 @@ body {
     height: auto;
     margin-top: 17px;
     background: #F8F8F8; }
-    .exhibition-item:hover .exhibition-addlink {
+    .exhibition-item:hover .exhibition-add__link {
       opacity: 1;
       -webkit-transition: .2s linear;
       transition: .2s linear;
@@ -513,9 +516,9 @@ body {
       height: auto; }
   .exhibition-link {
     display: block; }
-  .exhibition-addtext {
+  .exhibition-add__text {
     margin-left: 11px; }
-  .exhibition-addlink {
+  .exhibition-add__link {
     position: absolute;
     opacity: 0;
     top: 34%;
@@ -533,7 +536,7 @@ body {
     text-decoration: none;
     padding: 10px 16px 8px 13px;
     border: 1px solid #fff; }
-    .exhibition-addlink:hover {
+    .exhibition-add__link:hover {
       -webkit-filter: brightness(75%);
               filter: brightness(75%);
       -webkit-box-shadow: 3px 3px 15px #fff;
@@ -689,7 +692,9 @@ body {
       .footer__content-img {
         margin: 54px 0 0 120px; } }
   .footer__content-review {
-    width: 360px; }
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .footer__content-review {
         margin: 0 auto; } }
@@ -1308,6 +1313,7 @@ body {
 .demonstration {
   width: 100%;
   min-height: 777px;
+  height: auto;
   background-image: url(../img/demonstration-slide.jpg);
   background-repeat: no-repeat;
   background-size: cover;
