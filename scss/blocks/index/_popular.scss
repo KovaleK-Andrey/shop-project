@@ -1,4 +1,10 @@
 .popular {
+    &-margin {
+        margin-bottom: 128px;
+        @include phone {
+            margin-bottom: 64px;
+        }
+    }
     &__catalog {
         margin-top: 30px;
         @include netbook {
@@ -69,7 +75,8 @@
     &-item {
         position: relative;
         width: 360px;
-        height: 581px;
+        min-height: 581px;
+        height: auto;
         margin-top: 17px;
         background: $grey-bg-color;
         &:hover .exhibition-addlink {
@@ -87,6 +94,7 @@
         }
         &__img {
             width: 100%;
+            height: auto;
         }
     }
     &-link {
@@ -138,6 +146,7 @@
         @include font(16px, 1.2, 400);
         color:$pink-color;
         margin: 18px 0 0 18px;
+        padding-bottom: 20px;
     }
     &-lastitem {
         @include netbook {

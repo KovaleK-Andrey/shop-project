@@ -10,7 +10,8 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__container container">
+            <section class="header__container container">
+                <h2 class="visually-hidden">Шапка сайта</h2>
                 <div class="header__logo-container">
                     <a href="index.html"><img src="img/logo.png" alt="логотип" class="header__logo" width="44" height="38"></a>
                     <div class="header__search">
@@ -21,7 +22,7 @@
                         </button>
                     </div>
                 </div>
-                <ul class="header__menu-list burger__header-menu">
+                <ul class="header__menu-list header__menu-burger">
                     <li class="header__menu-item">
                         <button class="header__button">
                             <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +30,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li class="header__menu-item account__header-menu">
+                    <li class="header__menu-item header__menu-account">
                         <form action="registration.html" method="get">
                             <button class="header__button">
                                 <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +39,7 @@
                             </button>
                         </form>
                     </li>
-                    <li class="header__menu-item cart__header-menu">
+                    <li class="header__menu-item header__menu-cart">
                         <form action="cart.html">
                             <button class="header__button">
                                 <svg width="33" height="29" viewBox="0 0 33 29" xmlns="http://www.w3.org/2000/svg">
@@ -48,16 +49,16 @@
                         </form>
                     </li>
                 </ul>
-            </div>
+            </section>
         </header>
         <main>
-            <section class="top__navigation">
+            <section class="top top__navigation">
                 <div class="top__navigation-content container">
                 <h1 class="top__navigation-title">new arrivals</h1>
                 <ul class="top__navigation-item">
                         <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
                         <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
-                        <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list--active" href="#">new arrivals</a></li>
+                        <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list top__navigation-list--active" href="#">new arrivals</a></li>
                     </ul>
                 </div>
             </section> <!-- /Catalog navigation -->
@@ -207,7 +208,7 @@
             </section>
             <section class="footer__social">
                 <h3 class="visually-hidden">Социальные ссылки</h3>
-                <div class="footer__social-item container">
+                <div class="footer__social-item container footer__social-container">
                     <div class="footer__social-content">
                         <p class="footer__social-content-text">&copy; 2021  brand  all rights reserved.</p>
                     </div>

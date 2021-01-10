@@ -180,13 +180,13 @@ body {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .account__header-menu {
+  .header__menu-account {
     display: none;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .cart__header-menu {
+  .header__menu-cart {
     display: none;
   }
 }
@@ -546,33 +546,33 @@ body {
   }
 }
 
-.first__stock-content {
+.stock-first__content {
   left: calc(50% - 75px);
 }
 
-.last__stock {
+.stock-last {
   padding-top: 30px;
 }
 
-.last__stock-content {
+.stock-last__content {
   top: -40px;
   left: calc(50% - 80px);
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .last__stock-content {
+  .stock-last__content {
     display: none;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .last__stock-content {
+  .stock-last__content {
     top: -16px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .last__stock {
+  .stock-last {
     background-image: url(../img/forkids_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -583,8 +583,18 @@ body {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .last__stock-img {
+  .stock-last__img {
     display: none;
+  }
+}
+
+.popular-margin {
+  margin-bottom: 128px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .popular-margin {
+    margin-bottom: 64px;
   }
 }
 
@@ -701,7 +711,8 @@ body {
 .exhibition-item {
   position: relative;
   width: 360px;
-  height: 581px;
+  min-height: 581px;
+  height: auto;
   margin-top: 17px;
   background: #F8F8F8;
 }
@@ -726,6 +737,7 @@ body {
 
 .exhibition-item__img {
   width: 100%;
+  height: auto;
 }
 
 .exhibition-link {
@@ -795,6 +807,7 @@ body {
   font-weight: 400;
   color: #F16D7F;
   margin: 18px 0 0 18px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -1108,6 +1121,13 @@ body {
   transition: .2s linear;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__social-container {
+    margin: 0 auto;
+    width: 91.5%;
+  }
+}
+
 .footer__social {
   min-height: 79px;
   margin-top: 149px;
@@ -1192,13 +1212,6 @@ body {
 
 .footer__social-list:first-child {
   margin-left: 0px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .social__container {
-    margin: 0 auto;
-    width: 91.5%;
-  }
 }
 
 .product__footer {
@@ -1396,10 +1409,6 @@ body {
   }
 }
 
-.visual-item__catalog {
-  visibility: hidden;
-}
-
 .registration {
   display: flex;
   justify-content: space-between;
@@ -1516,7 +1525,7 @@ body {
   transition: .2s linear;
 }
 
-.registration-btn:hover .button__svg {
+.registration-btn:hover .registration-btn__svg {
   fill: #FF6A6A;
   transition: .1s linear;
 }
@@ -1562,7 +1571,7 @@ body {
   left: -33px;
 }
 
-.button__svg:nth-child(1) {
+.registration-btn__svg:nth-child(1) {
   margin-left: 20px;
   fill: #fff;
 }

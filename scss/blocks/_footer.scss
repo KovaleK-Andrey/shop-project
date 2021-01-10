@@ -119,6 +119,12 @@
             transition: .2s linear;
         }
     }
+    &__social-container {
+        @include table {
+            margin: 0 auto;
+            width: 91.5%;
+        }
+    }
     &__social {
         min-height: 79px;
         margin-top: 149px;
@@ -180,12 +186,7 @@
         margin-left: 0px;
     }
 }
-.social__container {
-    @include table {
-        margin: 0 auto;
-        width: 91.5%;
-    }
-}
+
 .product__footer {
     margin-top: 128px;
     @include phone {

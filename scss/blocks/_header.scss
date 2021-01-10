@@ -47,12 +47,12 @@
         }
     }     
 }
-.account__header-menu{
+.header__menu-account {
     @include phone {
         display: none;
     }
 }
-.cart__header-menu {
+.header__menu-cart {
     @include phone {
         display: none;
     }

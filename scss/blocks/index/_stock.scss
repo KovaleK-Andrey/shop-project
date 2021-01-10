@@ -82,14 +82,14 @@
         }
     }
  }
-.first__stock {
-    &-content {
+.stock-first {
+    &__content {
         left: calc(50% - 75px);
     }
 }
-.last__stock {
+.stock-last {
     padding-top: 30px;
-    &-content {
+    &__content {
         top: -40px;
         left: calc(50% - 80px);
         @include phone {
@@ -108,7 +108,7 @@
         height: 111px;
         margin-top: 32px;
     }
-    &-img {
+    &__img {
         @include phone {
             display: none;
         }

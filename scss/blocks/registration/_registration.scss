@@ -1,8 +1,4 @@
-.visual-item__catalog {
-    visibility: hidden;
-}
- 
-.registration {
+ .registration {
     @include flex-spbn;
     &-content {
         width: 360px;
@@ -91,7 +87,7 @@
             outline: 1px solid #FF6A6A;
             transition: .2s linear;
         }
-        &:hover .button__svg {
+        &:hover .registration-btn__svg {
             fill: #FF6A6A;
             transition: .1s linear;
         }
@@ -126,7 +122,7 @@
         }
     }
 }
-.button__svg:nth-child(1) {
+.registration-btn__svg:nth-child(1) {
     margin-left: 20px; 
     fill: #fff;
 }
