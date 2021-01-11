@@ -1,31 +1,78 @@
 .shopping__cart {
     @include flex-spbn;
+    @include table {
+        flex-direction: column;
+    }
+    @include phone {
+        flex-direction: column;
+    }
     &-purchases {
-        width: 652px;
-        height: 306px;
+        width: 100%;
+        height: auto;
         margin-top: 40px;
         @include flex-spbn;
         box-shadow: 15px 15px 17px #E5E5E5;
         &:first-child {
             margin-top: 96px;
+            @include table {
+                margin-top: 59px;
+            }
+            @include phone {
+                margin-top: 39px;
+            }
+        }
+        @include table {
+            width: 100%;
+            justify-content: start;
+        }
+        @include phone {
+            width: 100%;
+            height: auto;
+            justify-content: start;
+        }
+    }
+    &-img {
+        @include phone {
+            width: 42%;
+            height: auto;
         }
     }
     &-details {
-        width: 262px;
-        margin-right: 88px;
+        max-width: 262px;
+        width: 100%;
+        height: auto;
+        margin: 0 88px 0 31px;
+        @include table {
+            width: 100%;
+            margin-left: 31px;
+        }
+        @include phone {
+            width: 100%;
+            height: auto;
+            margin: 0 0 38px 17px;
+        }
     }
     &-title {
         margin-top: 22px;
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
         color: $header-bg;
+        @include phone {
+            @include font(16px, 1.2, 400);
+        }
     }
     &-description {
         margin-top: 5px;
         @include font(22px, 1.2, 400);
         color: #575757;
+        @include phone {
+            @include font(14px, 1.2, 400);
+        }
         &:nth-child(2) {
             margin-top: 42px;
+            @include phone {
+                margin-top: 26px;
+            }
         }
         &--pink {
             color: #FF6A6A;
@@ -41,10 +88,17 @@
         }
     }
     &-button {
-        width: 652px;
-        margin-top: 72px;
-        margin-bottom: 128px;
+        margin: 72px 0 128px;
         @include flex-spbn;
+        @include table {
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 62px 0 64px;
+        }
+        @include phone {
+            width: 100%;
+            margin: 30px 0 48px;
+        }
     }
     &-btn {
         text-transform: uppercase;
@@ -65,10 +119,22 @@
             color: #4A4A4A;
             margin-top: 24px;
         }
+        @include phone {
+            text-transform: capitalize;
+            @include font(12px, 1.2, 300);
+            padding: 13px 30px;
+        }
     }
     &-form {
         margin-top: 112px;
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
+        @include table {
+            margin: 64px 0 147px;
+        }
+        @include phone {
+            margin: 0 0 48px;
+        }
     }
     &-fieldset {
         border: none;
@@ -80,7 +146,8 @@
     }
     &-input {
         display: inline-block;
-        width: 360px;
+        /* width: 360px; */
+        width: 100%;
         @include font(13px, 1.2, 300);
         font-family: 'Lato', 'Arial', sans-serif;
         padding: 14px 16px;
@@ -96,13 +163,25 @@
             color: $header-bg;
         }
     }
+    &-address {
+        @include table {
+            display: flex;
+        }
+    }
 }
 .total {
     margin-top: 57px;
     padding: 42px;
     background: #F5F3F3;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     height: 214px;
+    @include table {
+        margin: 102px 0 147px 15px;
+    }
+    @include phone {
+        margin: 48px 0 96px;
+    }
     &-sub {
         text-align: right;
         @include font(11px, 1.2, 400);
@@ -149,6 +228,9 @@
             cursor: pointer;
             outline: 1px solid #FF6A6A;
             transition: .2s linear;
+        }
+        @include phone {
+            padding: 15px 32px;
         }
     }
 }

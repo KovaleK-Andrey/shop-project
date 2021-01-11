@@ -43,3 +43,9 @@
         }
     }
 }
+
+.top-title {
+    @include phone {
+        margin-top: 50px;
+    }
+}
