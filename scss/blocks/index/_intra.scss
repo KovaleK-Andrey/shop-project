@@ -1,37 +1,46 @@
 .intra {
     display: flex;
     position: relative;
+
     &__img {
         @include netbook {
             width: 50%;
             height: auto;
         }
+
         @include table {
             width: 50%;
             height: auto;
         }
+
         @include phone {
             display: none;
         }
     }
+
     &__content-span {
         @include font(32px, 1.2, 700);
         font-style: normal;
         color: $header-bg;
+
         &--pink {
             color: $pink-color;
         }
+
         @include netbook {
             @include font(26px, 29px, 700)
         }
+
         @include table {
             @include font(24px, 29px, 700)
         }
+
         @include phone {
             display: inline-block;
             @include font(20px, 37px, 700);
         }
     }
+
     &__content-title {
         position: relative;
         color: $header-bg;
@@ -39,6 +48,7 @@
         @include font(48px, 43px, 900);
         font-style: normal;
         text-transform: uppercase;
+
         &:before{
             position: absolute;
             content: '';
@@ -47,15 +57,18 @@
             background-color: $pink-color;
             left: -12px;
             top: -4px;
+
             @include phone {
                 min-height: 61px;
             }
         }
+
         @include netbook {
             display: inline-block;
             vertical-align: middle;
             @include font(46px, 37px, 900);
         }
+
         @include table {
             display: inline-block;
             vertical-align: middle;
@@ -67,38 +80,47 @@
             @include font(38px, 28px, 900);
         }
     }
+
     &__content {
         width: 100%;
         padding: 335px 0 0 64px;
-        background-color: #F1E4E6;
+        background-color: $grey-pink-bg;
+
         @include netbook {
             padding: 183px 0 0 60px;
         }
+
         @include table {
             padding: 138px 0 0 40px;
         }
+
         @include phone {
             padding: 148px 0 149px 56px;
         }
     }
+
     &__menu {
         width: 232px;
         height: 765px;
         background: $white-color;
-        box-shadow: 0 18px 33px #ccc;
+        box-shadow: 0 18px 33px $grey-light-color;
         position: absolute;
         top: 0;
         right: 0;
+
         @include netbook {
             display: none;
         }
+
         @include table {
             display: none;
         }
+
         @include phone {
             display: none;
          }
     }
+
     &__menu-title {
         @include font(14px, 1.2, 700);
         color: $black-color;
@@ -106,32 +128,37 @@
         margin-top: 37px;
         margin-left: 34px;
     }
+
     &__menu-item {
         margin: 22px 0 0 34px;
     }
+
     &__menu-mainlink {
         display: block;
         text-transform: uppercase;
         @include font(14px, 1.2, 400);
         color: $pink-color;
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
-            text-shadow: 0 1px 26px #FF6A6A;
+            text-shadow: 0 1px 26px $pink-color;
             transition: .2s linear;
         }
     }
+    
     &__menu-link {
         display: block;
         @include font(14px, 1.2, 400);
         text-transform: capitalize;
-        color: #6F6E6E;
+        color: $grey-text-color;
         text-decoration: none;
         margin-left: 19.5px;
         margin-top: 12px;
+
         &:hover {
             text-decoration: underline;
-            text-shadow: 0 1px 26px #6F6E6E;
+            text-shadow: 0 1px 26px $grey-text-color;
             transition: .2s linear;
         }
     }

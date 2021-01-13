@@ -1,108 +1,135 @@
 .footer {
     width: 100%;
-    @include table {
-        height: 100%;
-    }
     background-image: url(../img/subscribe-fon.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include table {
+        height: 100%;
+    }
+
     &__content-item {
         @include flex-spbn;
+
         @include table {
             flex-direction: column;
         }
+
         @include phone {
             flex-direction: column;
         }
     }
+
     &__content-img {
         margin: 97px 0 0 120px;
+
         @include table {
             margin: 54px 0 0 120px;
         }
+
         @include phone{
             margin: 54px 0 0 120px;
         }
     }
+
     &__content-review {
         max-width: 360px;
         width: 100%;
         margin: 0 auto;
+
         @include table {
             margin: 0 auto;
         }
     }
+
     &__content-text {
         margin-top: 30px;
         @include font(20px, 1.2, 400);
         color: $header-bg;
         text-align: center;
+
         @include table {
             margin-top: 20px;
         }
+
         @include phone {
             margin-top: 20px;
         }
     }
+
     &__content-italic {
         font-style: italic;
     }
+
     &__subscribe {
         margin-top: 150px;
         text-align: center;
+
         @include table {
             margin-top: 68px;
         }
+
         @include phone {
             margin-top: 59px;
         }
     }
+
     &__subscribe-title {
         @include font(24px, 1.6, 700);
         color: $header-bg;
         text-transform: uppercase;
+
         @include table {
             @include font(18px, 1.6, 700);
         }
+
         @include phone {
             @include font(24px, 1.6, 700);
         }
     }
+
     &__subscribe-subtitle {
         @include font(18px, 1.6, 400);
         color: $header-bg;
         text-transform: uppercase;
+
         @include phone {
             @include font(14px, 1.6, 400);
         }
     }
+
     &__subscribe-input {
         width: 322px;
         height: 49px;
-        background-color: #E1E1E1;
+        background-color: $grey-shadow-color;
         border: none;
         border-radius: 30px 0px 0px 30px;
         outline:none;
         padding-left: 20px;
         font-size: 14px;
         font-family: 'Lato', 'Arial', sans-serif;
+
         &:hover {
-            background: rgba(188, 248, 240, 0.589);
+            background: $bg-input;
             transition: .2s linear;
         }
+
         &:focus {
-            background: rgba(188, 248, 240, 0.589);
+            background: $bg-input;
             color: $header-bg;
             transition: .2s linear;
         }
+
         @include phone {
            width: 70%;
         }
     }
+
     &__subscribe-area {
         margin-top: 30px;
     }
+
     &__subscribe-btn {
         width: 100px;
         height: 49px;
@@ -114,76 +141,91 @@
         background-color: $pink-color;
         color: $white-color;
         border-radius: 0 30px 30px 0;
+
         &:hover {
             cursor: pointer;
-            background-color: #e95d70;
+            background-color: $pink-color;
             text-shadow: 2px 2px 10px $white-color;
             transition: .2s linear;
         }
     }
+
     &__social-container {
+
         @include table {
             margin: 0 auto;
             width: 91.5%;
         }
     }
+
     &__social {
         min-height: 79px;
         margin-top: 149px;
         background-color: $header-bg;
+
         @include table {
             margin-top: 140px;
         }
+
         @include phone {
             margin-top: 109px;
         }
     }
+
     &__social-item{
         @include flex-spbn;
         align-items: center;
         min-height: 79px;
+
         @include phone {
             flex-direction: column-reverse;
         }
     }
+
     &__social-content-text {
-        color: #fbfbfb;
+        color: $grey-bg-color;
         @include font(16px, 1.2, 400);
         text-transform: capitalize;
+
         @include phone {
             margin: 40px 0 9px 0;
         }
     }
+
     &__social-icon {
         display: flex;
         align-items: center;
     }
+
     &__social-list {
         margin-left: 7.3px;
+
         @include phone {
             display: block;
             padding-top: 20px;
         }
-
     }
+
     &__social-btn {
         width: 31.5px;
         height: 32px;
         background-color: $white-color;
         border: none;
         fill: $black-color;
+
         &:hover {
             cursor: pointer;
-            fill: #fff;
-            background-color: #000;
-            outline: 1px solid rgb(87, 85, 85);
+            fill: $white-color;
+            background-color: $black-color;
             transition: .2s linear;
         }
+
         &--pink{
-            background-color: #F16D7F;
-            fill: #fff;
+            background-color: $pink-color;
+            fill: $white-color;
          }
     }
+
     &__social-list:first-child {
         margin-left: 0px;
     }
@@ -191,6 +233,7 @@
 
 .product__footer {
     margin-top: 128px;
+    
     @include phone {
         margin-top: 64px;
     }

@@ -8,18 +8,21 @@
     background-position: center;
     @include flex-spbn;
     align-items: center;
+
     &-btn {
         width: 47px;
         height: 47px;
         background: rgba(42, 42, 42, 0.15);
         border: none;
         outline: none;
+        
         &:hover {
             cursor: pointer;
             background-color: rgb(228, 178, 186);
             transition: .2s linear;
         }
     }
+    
     @include phone {
         min-height: 624px
     }

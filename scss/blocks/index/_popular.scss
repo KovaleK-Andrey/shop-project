@@ -1,44 +1,55 @@
 .popular {
     &-margin {
         margin-bottom: 128px;
+
         @include phone {
             margin-bottom: 64px;
         }
     }
+
     &__catalog {
         margin-top: 30px;
+
         @include netbook {
             margin-top: 55px;
         }
+
         @include table {
             margin-top: 55px;
         }
+
         @include phone {
             margin-top: 47px;
         }
     }
+
     &__title {
         margin-top: 97px;
         text-align: center;
         text-transform: capitalize;
         @include font(30px, 1.2, 400);
         color: $header-bg;
+
         @include netbook {
             margin-top: 155px;
         }
+
         @include table {
             margin-top: 155px;
         }
+
         @include phone {
             margin-top: 64px;
         }
     }
+
     &__subtitle {
         text-align: center;
         @include font(14px, 1.2, 400);
-        color: #9F9F9F;
+        color: $grey-light-color;
         margin-top: 6px;
     }
+
     &__more {
         display: block;
         width: 211px;
@@ -47,31 +58,38 @@
         @include font(16px, 1.2, 400);
         text-decoration: none;
         text-transform: capitalize;
-        color: #F26376;
-        border: 1px solid #FF6A6A;
+        color: $pink-color;
+        border: 1px solid $pink-color;
+
         &:hover {
-            color: #FFF;
-            background: #FF6A6A;
+            color: $white-color;
+            background: $pink-color;
             transition: .2s linear;
             cursor: pointer;
         }
+
         @include table {
             margin: 33px auto 65px;
         }
+
         @include table {
             margin: 41px auto 96.5px;
         }
     }
 }
+
 .exhibition {
     @include flex-spbn;
     flex-wrap: wrap;
+
     @include netbook {
         justify-content: space-around;
     }
+
     @include table {
         justify-content: space-around;
     }
+
     &-item {
         position: relative;
         width: 360px;
@@ -79,30 +97,37 @@
         height: auto;
         margin-top: 17px;
         background: $grey-bg-color;
+
         &:hover .exhibition-add__link {
             opacity: 1;
             transition: .2s linear;
-            box-shadow: 2px 2px 10px #fff;
+            box-shadow: 2px 2px 10px $white-color;
             transition: .2s linear;
         }
+
         &:hover .exhibition-link {
             filter: brightness(50%);
             transition: .2s linear;
         }
+
         @include phone {
             width: 100%;
         }
+
         &__img {
             width: 100%;
             height: auto;
         }
     }
+
     &-link {
         display: block;
     }
+
     &-add__text {
         margin-left: 11px;
     }
+
     &-add__link {
         position: absolute;
         opacity: 0;
@@ -115,43 +140,51 @@
         text-decoration: none;
         padding: 10px 16px 8px 13px;
         border: 1px solid $white-color;
+
         &:hover {
             filter: brightness(75%);
-            box-shadow: 3px 3px 15px #fff;
+            box-shadow: 3px 3px 15px $white-color;
             transition: .2s linear;
         }
     }
+
     &__link-title {
         text-decoration: none;
         @include font(13px, 1.2, 400);
         color: $black-color;
         text-transform: uppercase;
         margin: 25px 0 0 18px;
+
         &:hover {
             color: $pink-color;
         }
     }
+
     &-title {
         @include font(13px, 1.2, 400);
         color: $black-color;
         text-transform: uppercase;
         margin: 25px 0 0 18px;
     }
+
     &-text {
         @include font(14px, 1.2, 300);
         color: $grey-text-color;
         margin: 13px 29px 0 17px;
     }
+
     &-price {
         @include font(16px, 1.2, 400);
         color:$pink-color;
         margin: 18px 0 0 18px;
         padding-bottom: 20px;
     }
+    
     &-lastitem {
         @include netbook {
             display: none;
         }
+        
         @include table {
             display: none;
         }

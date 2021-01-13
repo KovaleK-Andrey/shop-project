@@ -1,19 +1,24 @@
  .registration {
     @include flex-spbn;
+
     &-content {
         width: 360px;
     }
+
     &-form {
         margin-top: 64px;
     }
+
     &-fieldset {
         border: none;
         text-transform: capitalize;
     }
+
     &-legend {
         @include font(16px, 1.2, 300);
         color: $header-bg;
     }
+
     &__input-name {
         padding: 13px 16px;
         margin-top: 20px;
@@ -24,6 +29,7 @@
         color: $header-bg;
         border: none;
         outline: 1px solid #A4A4A4;
+
         &:hover,
         &:focus,
         &:active {
@@ -31,12 +37,15 @@
             transition: .2s linear;
         }
     }
+
     &__input-sex {
         display: none;
+
         &:checked+.registration__label-sex:before {
-            background: rgb(0, 0, 0);
+            background: $black-color;
         }
     }
+
     &__label-sex {
         position: relative;
         margin-top: 33.5px;
@@ -45,28 +54,33 @@
         @include font(11px, 1.2, 300);
         color: $black-color;
         text-transform: capitalize;
+
         &:before {
             position: absolute;
             content: "";
             left: -27px;
             top: -2px;
-            border: 1px solid #A4A4A4;
+            border: 1px solid $grey-light-color;
             border-radius: 50%;
             width: 16px;
             height: 16px;
         }
+
         &:nth-child(5) {
             margin-left: 27px;
         }
     }
+
     &__login {
         margin-top: 34px;
     }
+
     &-notification {
         margin: 15px 0 39px 0;
         @include font(13px, 1.2, 300);
-        color: #B1B1B1;
+        color: $grey-light-color;
     }
+
     &-btn {
         display: block;
         width: 167px;
@@ -79,40 +93,48 @@
         padding: 16px 20px 17px 29px;
         border: none;
         outline: 1px solid $white-color;
+
         &:hover {
-            color: #FF6A6A;
+            color: $pink-color;
             background: $white-color;
             transition: .2s linear;
             cursor: pointer;
-            outline: 1px solid #FF6A6A;
+            outline: 1px solid $pink-color;
             transition: .2s linear;
         }
+
         &:hover .registration-btn__svg {
-            fill: #FF6A6A;
+            fill: $pink-color;
             transition: .1s linear;
         }
     }
+
     &__perks {
         width: 652px;
         margin-top: 64px;
+
         &-title {
             @include font(24px, 1.2, 300);
             text-transform: uppercase;
             color: $black-color;
         }
+
         &-text {
             margin-top: 22px;
             @include font(24px, 1.2, 300);
         }
+
         &-list {
             position: relative;
             @include font(24px, 1.2, 300);
             margin-top: 16px;
             margin-left: 39px;
             padding-left: 4px;
+
             &:first-child {
                 margin-top: 21px;
             }
+
             &:before {
                 display: block;
                 position: absolute;
@@ -122,7 +144,8 @@
         }
     }
 }
+
 .registration-btn__svg:nth-child(1) {
     margin-left: 20px; 
-    fill: #fff;
+    fill: $white-color;
 }
