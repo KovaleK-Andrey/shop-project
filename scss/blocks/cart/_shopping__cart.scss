@@ -1,121 +1,242 @@
 .shopping__cart {
     @include flex-spbn;
+
+    @include table {
+        flex-direction: column;
+    }
+
+    @include phone {
+        flex-direction: column;
+    }
+
     &-purchases {
-        width: 652px;
-        height: 306px;
+        width: 100%;
+        height: auto;
         margin-top: 40px;
         @include flex-spbn;
-        box-shadow: 15px 15px 17px #E5E5E5;
+        box-shadow: 15px 15px 17px $grey-shadow-color;
+
         &:first-child {
             margin-top: 96px;
+
+            @include table {
+                margin-top: 59px;
+            }
+
+            @include phone {
+                margin-top: 39px;
+            }
+        }
+
+        @include table {
+            width: 100%;
+            justify-content: start;
+        }
+
+        @include phone {
+            width: 100%;
+            height: auto;
+            justify-content: start;
         }
     }
-    &-details {
-        width: 262px;
-        margin-right: 88px;
+
+    &-img {
+
+        @include phone {
+            width: 42%;
+            height: auto;
+        }
     }
+
+    &-details {
+        max-width: 262px;
+        width: 100%;
+        height: auto;
+        margin: 0 88px 0 31px;
+
+        @include table {
+            width: 100%;
+            margin-left: 31px;
+        }
+
+        @include phone {
+            width: 100%;
+            height: auto;
+            margin: 0 0 38px 17px;
+        }
+    }
+
     &-title {
         margin-top: 22px;
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
         color: $header-bg;
+
+        @include phone {
+            @include font(16px, 1.2, 400);
+        }
     }
+
     &-description {
         margin-top: 5px;
         @include font(22px, 1.2, 400);
-        color: #575757;
+        color: $grey-text-color;
+
+        @include phone {
+            @include font(14px, 1.2, 400);
+        }
+
         &:nth-child(2) {
             margin-top: 42px;
+
+            @include phone {
+                margin-top: 26px;
+            }
         }
+
         &--pink {
-            color: #FF6A6A;
+            color: $pink-color;
         }
+
         &--grey {
-            color: #656565;
+            color: $grey-text-color;
         }
+
         &--border {
-            border: 1px solid #EAEAEA;
+            border: 1px solid $grey-bg-color;
             padding: 0 16px;
             margin-left: 24px;
-            color: #656565;
+            color: $grey-text-color;
         }
     }
+
     &-button {
-        width: 652px;
-        margin-top: 72px;
-        margin-bottom: 128px;
+        margin: 72px 0 128px;
         @include flex-spbn;
+
+        @include table {
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 62px 0 64px;
+        }
+
+        @include phone {
+            width: 100%;
+            margin: 30px 0 48px;
+        }
     }
+
     &-btn {
         text-transform: uppercase;
         @include font(14px, 1.2, 300);
         background: $white-color;
         color: $black-color;
         padding: 16px 40px;
-        border: 1px solid #A4A4A4;
+        border: 1px solid $grey-light-color;
+
         &:hover {
             cursor: pointer;
             background-color: $pink-color;
             color: $white-color;
             transition: .2s linear;
         }
+
         &--small {
             padding: 11px 14px;
             font-size: 11px;
-            color: #4A4A4A;
+            color: $grey-text-color;
             margin-top: 24px;
         }
+
+        @include phone {
+            text-transform: capitalize;
+            @include font(12px, 1.2, 300);
+            padding: 13px 30px;
+        }
     }
+
     &-form {
         margin-top: 112px;
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
+
+        @include table {
+            margin: 64px 0 147px;
+        }
+
+        @include phone {
+            margin: 0 0 48px;
+        }
     }
+
     &-fieldset {
         border: none;
     }
+
     &-legend {
         @include font(16px, 1.2, 300);
         text-transform: uppercase;
         color: $header-bg;
     }
+
     &-input {
         display: inline-block;
-        width: 360px;
+        width: 100%;
         @include font(13px, 1.2, 300);
         font-family: 'Lato', 'Arial', sans-serif;
         padding: 14px 16px;
         margin-top: 20px;
         border: none;
         color: $header-bg;
-        outline: 1px solid #A4A4A4;
+        outline: 1px solid $grey-light-color;
         appearance: none;
+
         &:hover,
         &:focus {
-            background: rgb(250, 177, 207);
+            outline: 1px solid $pink-color;
             transition: .2s linear;
             color: $header-bg;
+        }
+    }
+
+    &-address {
+
+        @include table {
+            display: flex;
         }
     }
 }
 .total {
     margin-top: 57px;
     padding: 42px;
-    background: #F5F3F3;
-    width: 360px;
-    height: 214px;
+    background: $grey-bg-color;
+    max-width: 360px;
+    width: 100%;
+    min-height: 214px;
+
+    @include table {
+        margin: 102px 0 147px 15px;
+    }
+
+    @include phone {
+        margin: 48px 0 96px;
+    }
+
     &-sub {
         text-align: right;
         @include font(11px, 1.2, 400);
         text-transform: uppercase;
-        color: #4A4A4A;
+        color: $grey-text-color;
     }
+
     &-price {
         padding-left: 20px;
         &--pink {
-            color: #F16D7F;
+            color:$pink-color;
             font-weight: 700;
         }
     }
+
     &-grand {
         position: relative;
         text-align: right;
@@ -123,6 +244,7 @@
         @include font(16px, 1.2, 300);
         color: $header-bg;
         text-transform: uppercase;
+
         &:after {
             position: absolute;
             content: "";
@@ -130,9 +252,10 @@
             right: 0;
             width: 275px;
             height: 1px;
-            background: #E2E2E2;
+            background: $grey-shadow-color;
         }
     }
+    
     &-link {
         display: inline-block;
         margin-top: 39px;
@@ -142,15 +265,18 @@
         background: $pink-color;
         padding: 15px 42px;
         text-decoration: none;
+
         &:hover {
-            color: #FF6A6A;
-            background: #F5F3F3;;
+            color: $pink-color;
+            background: $grey-bg-color;
             transition: .2s linear;
             cursor: pointer;
-            outline: 1px solid #FF6A6A;
+            outline: 1px solid $pink-color;
             transition: .2s linear;
+        }
+        
+        @include phone {
+            padding: 15px 32px;
         }
     }
 }
- 
- 

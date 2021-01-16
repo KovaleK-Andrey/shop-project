@@ -1,38 +1,62 @@
 .top__navigation {
-    height: 148px;
-    background: #F8F3F4;
+    min-height: 148px;
+    background: $grey-pink-bg;
+
     &-content {
         height: 148px;
         @include flex-spbn;
         align-items: center;
+
+        @include phone {
+            flex-direction: column;
+            justify-content: start;
+        }
     }
+
     &-title {
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
         color: $pink-color;
+
+        @include phone {
+            margin-top: 24px;
+        }
     }
+
     &-item {
         display: flex;
     }
+
     &-link {
         text-decoration: none;
         @include font(14px, 1.2, 700);
-        color: #636363;
+        color: $grey-text-color;
         text-transform: uppercase;
         margin-left: 6px;
+
         &:hover {
             color: $black-color;
             transition: .2s linear;
-         }
+        }
     }
+
     &-span {
         margin-left: 3px;
     }
+
     &-list--active {
         color: $pink-color;
+
         &:hover {
-            color: #F16D7F;
+            color: $pink-color;
             text-decoration: underline;
         }
+    }
+}
+
+.top-title {
+    
+    @include phone {
+        margin-top: 60px;
     }
 }

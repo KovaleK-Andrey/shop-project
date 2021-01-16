@@ -1,17 +1,36 @@
 .header {
     background-color: $header-bg;
+
     &__container {
         height: 75px;
         @include flex-spbn;
         align-items: center;
+
+        @include netbook {
+            width: 91.5%;
+            margin: 0 auto;
+        }
+
+        @include table {
+            width: 91.5%;
+            margin: 0 auto;
+        }
+
+        @include phone {
+            width: 91.4%;
+            margin: 0 auto;
+        }
     }
+
     &__logo {
         margin: 0 41px 0 0;
     }
+
     &__button {
         fill: $grey-bg-color;
         background-color: transparent;
         border: none;
+
         &:hover,
         &:focus {
             fill: $pink-color;
@@ -19,33 +38,37 @@
             outline: none;
             transition: .2s linear;
         }
+
         &:active {
             opacity: .5;
         }
     }
+
     &__menu-list,
     &__logo-container {
         display: flex;
         align-items: center;
     }
+
     &__menu-item:not(:last-of-type) {
         margin: 0 34px 0 0;
-    }
-     
+
+        @include phone {
+            margin: 0;
+        }
+    }     
 }
 
+.header__menu-account {
 
+    @include phone {
+        display: none;
+    }
+}
 
- 
- 
- 
- 
+.header__menu-cart {
 
- 
- 
- 
- 
- 
- 
- 
- 
+    @include phone {
+        display: none;
+    }
+}

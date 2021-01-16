@@ -21,7 +21,7 @@
                         </button>
                     </div>
                 </div>
-                <ul class="header__menu-list">
+                <ul class="header__menu-list header__menu-burger">
                     <li class="header__menu-item">
                         <button class="header__button">
                             <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header__menu-account">
                         <form action="registration.html" method="get">
                             <button class="header__button">
                                 <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
                             </button>
                         </form>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header__menu-cart">
                         <form action="cart.html">
                             <button class="header__button">
                                 <svg width="33" height="29" viewBox="0 0 33 29" xmlns="http://www.w3.org/2000/svg">
@@ -51,21 +51,24 @@
             </div>
         </header>
         <main>
-            <section class="top__navigation">
-                <div class="top__navigation-content container">
-                <h1 class="top__navigation-title">new arrivals</h1>
-                <ul class="top__navigation-item">
-                        <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
-                        <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
-                        <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list--active" href="#">new arrivals</a></li>
-                    </ul>
+            <section class="top">
+                <div class="top__navigation">
+                    <div class="top__navigation-content container">
+                        <h1 class="top__navigation-title">new arrivals</h1>
+                        <ul class="top__navigation-item">
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list top__navigation-list--active" href="#">new arrivals</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section> <!-- /Catalog navigation -->
+            </section> <!-- /Top navigation -->
             <section class="filter container">
                 <h2 class="visually-hidden">Филтр</h2>
                 <div class="filter-menu">
-                    <a class="filter-link" href="#">filter
-                        <svg class="filter__svg" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                    <a class="filter-link" href="#">
+                        <span class="filter-span">filter</span>
+                        <svg class="filter__svg" id="filter__svgmenu" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
                         </svg>
                     </a>
@@ -94,64 +97,64 @@
                 <h2 class="visually-hidden">Популярное</h2>
                 <ul class="popular__catalog exhibition">
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item1.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item1.jpg" alt="exhibition-img-01" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-1.jpg" class="exhibition-item__img" alt="exhibition-img-1" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item02.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item02.jpg" alt="exhibition-img-02" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-7.jpg" class="exhibition-item__img" alt="exhibition-img-7" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item3.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item3.jpg" alt="exhibition-img-03" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-3.jpg" class="exhibition-item__img" alt="exhibition-img-03" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item4.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item4.jpg" alt="exhibition-img-04" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-4.jpg" class="exhibition-item__img" alt="exhibition-img-04" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item05.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item05.jpg" alt="exhibition-img-05" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-8.jpg" class="exhibition-item__img" alt="exhibition-img-8" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item06.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item06.jpg" alt="exhibition-img-06" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-9.jpg" class="exhibition-item__img" alt="exhibition-img-9" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item07.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item07.jpg" alt="exhibition-img-07" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-10.jpg" class="exhibition-item__img" alt="exhibition-img-10" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item08.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item08.jpg" alt="exhibition-img-08" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-11.jpg" class="exhibition-item__img" alt="exhibition-img-11" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item09.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item09.jpg" alt="exhibition-img-09" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
+                    <li class="exhibition-item exhibition-lastitem">
+                        <a class="exhibition-link" href="product.html" target="_blank"><img src="img/item-12.jpg" class="exhibition-item__img" alt="exhibition-img-12" width="360" height="420"></a>
+                        <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="product.html">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
@@ -174,12 +177,12 @@
                         <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
                     </li>
                     <li class="services__catalog-item">
-                        <img class="services__catalog-img2" src="img/sales.png" alt="Распродажа">
+                        <img class="services__catalog-img-2" src="img/sales.png" alt="Распродажа">
                         <h3 class="services__catalog-title">sales & discounts</h3>
                         <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
                     </li>
                     <li class="services__catalog-item">
-                        <img class="services__catalog-img3" src="img/quality.png" alt="Гарантия">
+                        <img class="services__catalog-img-3" src="img/quality.png" alt="Гарантия">
                         <h3 class="services__catalog-title">quality assurance</h3>
                         <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
                     </li>
@@ -205,8 +208,8 @@
                 </div>
             </section>
             <section class="footer__social">
-                <h3 class="visually-hidden">Социальные ссылки</h3>
-                <div class="footer__social-item container">
+                <h2 class="visually-hidden">Социальные ссылки</h2>
+                <div class="footer__social-item container footer__social-container">
                     <div class="footer__social-content">
                         <p class="footer__social-content-text">&copy; 2021  brand  all rights reserved.</p>
                     </div>

@@ -1,33 +1,84 @@
 .services {
-    height: 341px;
+    min-height: 341px;
     background-color: $header-bg;
+    
     &__catalog {
         display: flex;
         justify-content: space-around;
+
+        @include table {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+        }
     }
+
     &__catalog-img {
         margin: 103px 0 0 158px;
+
+        @include table {
+            margin: 48px 0 0 158px;
+        }
+
+        @include phone {
+            margin: 48px 0 0 158px;
+        }
     }
-    &__catalog-img2 {
+
+    &__catalog-img-2 {
         margin: 93px 0 0 158px;
+
+        @include table {
+            margin: 48px 0 0 158px;
+        }
+
+        @include phone {
+            margin: 48px 0 0 158px;
+        }
     }
-    &__catalog-img3 {
+
+    &__catalog-img-3 {
         margin: 96px 0 0 158px;
+
+        @include table {
+            margin: 48px 0 0 158px;
+        }
+
+        @include phone {
+            margin: 48px 0 0 158px;
+        }
     }
+
     &__catalog-item {
         width: 360px;
+
+        &:last-child {
+            @include table {
+                padding-bottom: 64px;
+            }
+
+            @include phone {
+                padding-bottom: 81px;
+            }
+        }
     }
+
     &__catalog-title {
         padding-top: 28px;
         @include font(20px, 1.2, 400);
         text-align: center;
-        color: #fbfbfb;
+        color: $grey-bg-color;
         text-transform: capitalize;
     }
+
     &__catalog-text {
         padding-top: 15px;
         @include font(14px, 1.2, 300);
         text-align: center;
-        color: #fbfbfbdc;
+        color: $grey-bg-color;
     }
 }

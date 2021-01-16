@@ -8,3 +8,21 @@
     line-height: $line-height;
     font-weight: $font-weight;
 }
+
+@mixin netbook {
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin table {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (min-width: 375px) and (max-width: 767px) {
+        @content;
+    }
+}

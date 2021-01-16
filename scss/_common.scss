@@ -11,7 +11,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+   margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -22,51 +22,80 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
- }
- 
- .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
- }
- 
- body {
-    width: 1600px;
-    margin: 0 auto;
-    background-color: #ffffff;
- 
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
- }
- 
- .container {
-    width: 1140px;
-    margin: 0 auto;
- }
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+   clip: rect(0 0 0 0);
+}
+
+body {
+   width: 1600px;
+
+   @include netbook {
+      width: 100%;
+   }
+
+   @include table {
+      width: 100%;
+   }
+
+   @include phone {
+      width: 100%;
+   }
+
+   margin: 0 auto;
+   background-color: $white-color;
+   font-family: 'Lato', 'Arial', sans-serif;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.2;
+}
+
+.container {
+   width: 1140px;
+   margin: 0 auto;
+
+   @include netbook {
+      width: 95.5%;
+   }
+
+   @include table {
+      width: 95.8%;
+   }
+
+   @include phone {
+      width: 91.4%;
+   }
+}

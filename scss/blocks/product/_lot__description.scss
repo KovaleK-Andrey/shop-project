@@ -5,51 +5,83 @@
     height: 601px;
     background-color: $white-color;
     text-align: center;
-    border: 1px solid #EAEAEA;
+    border: 1px solid $grey-shadow-color;
+
+    @include phone {
+        width: 100%;
+        height: auto;
+        position: static;
+        border: none;
+        border-bottom: 1px solid $grey-shadow-color;
+    }
+
+    @include table {
+        width: 100%;
+        height: auto;
+        position: static;
+        border: none;
+        border-bottom: 1px solid $grey-shadow-color;
+    }
+
     &-suptitle {
         position: relative;
         color: $pink-color;
         @include font(14px, 1.2, 300);
         text-transform: uppercase;
         margin-top: 64px;
+
         &::after {
             position: absolute;
             content: "";
             width: 63px;
             height: 3px;
-            background-color: #EF5B70;
+            background-color: $pink-color;
             bottom: -12px;
             left: calc(50% - 32px);
         }
     }
+
     &-title {
-        color: #4d4d4d;
+        color: $grey-text-color;
         @include font(18px, 1.2, 300);
         text-transform: uppercase;
         margin-top: 27px;
     }
+
     &-content {
-        color: #5e5e5e;
+        color: $grey-text-color;
         @include font(14px, 1.2, 300);
-        width: 555px;
-        margin-left: 292px;
-        margin-top: 48px;
+        max-width: 555px;
+        margin: 48px auto 0;
+
+        @include phone {
+            width: 87%;
+        }
     }
+
     &-price {
         @include font(24px, 1.2, 300);
-        color: #EF5B70;
+        color: $pink-color;
         margin-top: 32px;
         position: relative;
+
         &::after {
             position: absolute;
             content: "";
             width: 641px;
             height: 1px;
-            background-color: #EAEAEA;
+            background-color: $grey-shadow-color;
             right: calc(50% - 320px);
             bottom: -65px;
+
+            @include phone {
+                width: 51%;
+                right: calc(50% - 90px);;
+                bottom: -32px;
+            }
         }
     }
+
     &-link {
         margin: 49px auto 0;
         display: flex;
@@ -59,15 +91,26 @@
         text-transform: capitalize;
         @include font(16px, 1.2, 400);
         text-decoration: none;
-        border: 1px solid #FF6A6A;
+        border: 1px solid $pink-color;
         color: $pink-color;
+
         &:hover {
             box-shadow: 2px 2px 8px $pink-color;
         }
+
+        @include table {
+            margin: 65px auto 65px;
+        }
+
+        @include phone {
+            margin: 65px auto 65px;
+        }
     }
+
     &-img {
         padding-left: 23px;
     }
+
     &-span {
         padding-left: 23px;
     }
@@ -76,4 +119,17 @@
 .description {
     margin-left: calc(50% - 234px);
     margin-top: 120px;
+
+    @include phone {
+        width: 100%;
+        margin-top: 81px;
+    }
+
+    &-link {
+        @include phone {
+            font-size: 10px;
+            position: relative;
+            right: -41px;
+        }
+    }
 }
