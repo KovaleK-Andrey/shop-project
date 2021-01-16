@@ -1,12 +1,20 @@
 .registration {
     @include flex-spbn;
 
-    &-content {
-        width: 360px;
+    @include phone {
+        flex-direction: column;
     }
+
+    &-content {
+        max-width: 360px;
+    }    
 
     &-form {
         margin-top: 64px;
+
+        @include table {
+            margin-top: 40px;
+        }
     }
 
     &-fieldset {
@@ -29,6 +37,10 @@
         color: $header-bg;
         border: none;
         outline: 1px solid #A4A4A4;
+
+        @include phone {
+            width: 100%;
+        }
 
         &:hover,
         &:focus,
@@ -94,6 +106,10 @@
         border: none;
         outline: 1px solid $white-color;
 
+        @include phone {
+            margin-bottom: 40px;
+        }
+
         &:hover {
             color: $pink-color;
             background: $white-color;
@@ -110,18 +126,48 @@
     }
 
     &__perks {
-        width: 652px;
+        max-width: 652px;
+        width: 100%;
         margin-top: 64px;
+
+        @include netbook {
+            padding-left: 22px;
+        }
+
+        @include table {
+            margin: 40px 0 0 22px;
+            @include font(16px, 1.2, 300);
+        }
+
+        @include phone {
+            margin: 0 0 96px 0;
+        }
 
         &-title {
             @include font(24px, 1.2, 300);
             text-transform: uppercase;
             color: $black-color;
+
+            @include table {
+                @include font(16px, 1.2, 300);
+            }
+
+            @include phone {
+                @include font(16px, 1.2, 300);
+            }
         }
 
         &-text {
             margin-top: 22px;
             @include font(24px, 1.2, 300);
+
+            @include table {
+                @include font(16px, 1.2, 300);
+            }
+
+            @include phone {
+                @include font(16px, 1.2, 300);
+            }
         }
 
         &-list {
@@ -130,6 +176,14 @@
             margin-top: 16px;
             margin-left: 39px;
             padding-left: 4px;
+
+            @include table {
+                @include font(16px, 1.2, 300);
+            }
+
+            @include phone {
+                @include font(16px, 1.2, 300);
+            }
 
             &:first-child {
                 margin-top: 21px;
