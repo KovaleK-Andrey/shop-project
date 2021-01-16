@@ -122,7 +122,7 @@
         }
 
         @include phone {
-           width: 70%;
+            width: 70%;
         }
     }
 
@@ -223,7 +223,7 @@
         &--pink{
             background-color: $pink-color;
             fill: $white-color;
-         }
+        }
     }
 
     &__social-list:first-child {

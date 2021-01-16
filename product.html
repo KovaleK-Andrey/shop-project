@@ -10,8 +10,7 @@
     </head>
     <body>
         <header class="header">
-            <section class="header__container container">
-                <h2 class="visually-hidden">Шапка сайта</h2>
+            <div class="header__container container">
                 <div class="header__logo-container">
                     <a href="index.html"><img src="img/logo.png" alt="логотип" class="header__logo" width="44" height="38"></a>
                     <div class="header__search">
@@ -49,19 +48,21 @@
                         </form>
                     </li>
                 </ul>
-            </section>
+            </div>
         </header>
         <main>
-            <section class="top top__navigation">
-                <div class="top__navigation-content container">
-                <h1 class="top__navigation-title">new arrivals</h1>
-                <ul class="top__navigation-item">
-                        <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
-                        <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
-                        <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list top__navigation-list--active" href="#">new arrivals</a></li>
-                    </ul>
+            <section class="top">
+                <div class="top__navigation">
+                    <div class="top__navigation-content container">
+                        <h1 class="top__navigation-title">new arrivals</h1>
+                        <ul class="top__navigation-item visually-hidden">
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list top__navigation-list--active" href="#">new arrivals</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section> <!-- /Catalog top__navigation -->
+            </section> <!-- /Top__navigation -->
             <section class="demonstration">
                 <h1 class="visually-hidden">Слайдер</h1>
                 <button class="demonstration-btn" type="button"><img src="img/demonstration-left.png" alt="left" width="12" height="22"></button>
@@ -99,21 +100,21 @@
                 <h2 class="visually-hidden">Популярное</h2>
                 <ul class="popular__catalog exhibition">
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item-07.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item-4.jpg" class="exhibition-item__img" alt="exhibition-img-07" width="360" height="420"></a>
+                        <a class="exhibition-link" href="#" target="_blank"><img src="img/item-4.jpg" class="exhibition-item__img" alt="exhibition-img-4" width="360" height="420"></a>
                         <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item-08.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item-08.jpg" class="exhibition-item__img"  alt="exhibition-img-08" width="360" height="420"></a>
+                        <a class="exhibition-link" href="#" target="_blank"><img src="img/item-3.jpg" class="exhibition-item__img"  alt="exhibition-img-3" width="360" height="420"></a>
                         <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="exhibition-price">$52.00</p>
                     </li>
                     <li class="exhibition-item exhibition-lastitem">
-                        <a class="exhibition-link" href="img/item-6.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item-6.jpg" class="exhibition-item__img" alt="exhibition-img-6" width="360" height="420"></a>
+                        <a class="exhibition-link" href="#" target="_blank"><img src="img/item-6.jpg" class="exhibition-item__img" alt="exhibition-img-6" width="360" height="420"></a>
                         <a class="exhibition-add__link" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-add__text">Add to Cart</span></a>
                         <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
                         <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -141,7 +142,7 @@
                 </div>
             </section>
             <section class="footer__social">
-                <h3 class="visually-hidden">Социальные ссылки</h3>
+                <h2 class="visually-hidden">Социальные ссылки</h2>
                 <div class="footer__social-item container footer__social-container">
                     <div class="footer__social-content">
                         <p class="footer__social-content-text">&copy; 2021  brand  all rights reserved.</p>

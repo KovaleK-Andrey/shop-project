@@ -10,8 +10,7 @@
     </head>
     <body>
         <header class="header">
-            <section class="header__container container">
-                <h2 class="visually-hidden">Шапка сайта</h2>
+            <div class="header__container container">
                 <div class="header__logo-container">
                     <a href="index.html"><img src="img/logo.png" alt="логотип" class="header__logo" width="44" height="38"></a>
                     <div class="header__search">
@@ -49,13 +48,20 @@
                         </form>
                     </li>
                 </ul>
-            </section>
+            </div>
         </header>
         <main>
-            <section class="top top__navigation">
+            <section class="top">
                 <h1 class="visually-hidden ">Страница корзины</h1>
-                <div class="top__navigation-content container">
-                    <p class="top__navigation-title top-title">shopping cart</p>
+                <div class="top__navigation">
+                    <div class="top__navigation-content container">
+                        <p class="top__navigation-title top-title">shopping cart</p>
+                        <ul class="top__navigation-item visually-hidden">
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="index.html">home<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link" href="#">men<span class="top__navigation-span">/</span></a></li>
+                            <li class="top__navigation-list"><a class="top__navigation-link top__navigation-list top__navigation-list--active" href="#">new arrivals</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="shopping shopping__cart container">
@@ -72,7 +78,7 @@
                         </div>
                     </div>
                     <div class="shopping__cart-purchases">
-                        <img src="img/item-02.jpg" class="shopping__cart-img" alt="товар" width="262" height="306">
+                        <img src="img/item-7.jpg" class="shopping__cart-img" alt="товар" width="262" height="306">
                         <div class="shopping__cart-details">
                             <p class="shopping__cart-title">mango people t-shirt</p>
                             <p class="shopping__cart-description">Price: <span class="shopping__cart-price shopping__cart-description shopping__cart-description--pink">$300</span></p>
@@ -128,7 +134,7 @@
                 </div>
             </section>
             <section class="footer__social">
-                <h3 class="visually-hidden">Социальные ссылки</h3>
+                <h2 class="visually-hidden">Социальные ссылки</h2>
                 <div class="footer__social-item container footer__social-container">
                     <div class="footer__social-content">
                         <p class="footer__social-content-text">&copy; 2021  brand  all rights reserved.</p>
