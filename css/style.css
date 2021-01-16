@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2202,6 +2203,7 @@ body {
   margin-left: calc(50% - 234px);
   margin-top: 120px;
 }
+
 
 @media (min-width: 375px) and (max-width: 767px) {
   .description {
