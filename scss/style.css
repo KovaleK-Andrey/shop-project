@@ -227,17 +227,18 @@ body {
         font-weight: 900; } }
   .intra__content {
     width: 100%;
-    padding: 335px 0 0 64px;
+    top: 50%;
+    /* padding: 335px 0 0 64px; */
     background-color: #f1e4e6; }
     @media (min-width: 1024px) and (max-width: 1200px) {
       .intra__content {
-        padding: 183px 0 0 60px; } }
+        /* padding: 183px 0 0 60px; */ } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .intra__content {
-        padding: 138px 0 0 40px; } }
+        /*  padding: 138px 0 0 40px; */ } }
     @media (min-width: 375px) and (max-width: 767px) {
       .intra__content {
-        padding: 148px 0 149px 56px; } }
+        /* padding: 148px 0 149px 56px; */ } }
   .intra__menu {
     width: 232px;
     height: 765px;
@@ -346,8 +347,11 @@ body {
           width: 100%; } }
     .stock__item-content {
       position: absolute;
+      width: 100%;
       top: 0;
-      left: calc(50% - 60.5px); }
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%); }
       @media (min-width: 1024px) and (max-width: 1200px) {
         .stock__item-content {
           top: -14px; } }
@@ -381,20 +385,14 @@ body {
         width: 100%;
         height: 100%; } }
 
-.stock-first__content {
-  left: calc(50% - 75px); }
-
 .stock-last {
   padding-top: 30px; }
-  .stock-last__content {
-    top: -40px;
-    left: calc(50% - 80px); }
-    @media (min-width: 375px) and (max-width: 767px) {
-      .stock-last__content {
-        display: none; } }
-    @media (min-width: 1024px) and (max-width: 1200px) {
-      .stock-last__content {
-        top: -16px; } }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .stock-last__content {
+      display: none; } }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .stock-last__content {
+      top: -16px; } }
   @media (min-width: 375px) and (max-width: 767px) {
     .stock-last {
       background-image: url(../img/forkids_bg.jpg);
@@ -496,7 +494,7 @@ body {
     height: auto;
     margin-top: 17px;
     background: #f8f8f8; }
-    .exhibition-item:hover .exhibition-add__link {
+    .exhibition-item:hover .exhibition-add-link {
       opacity: 1;
       -webkit-transition: .2s linear;
       transition: .2s linear;
@@ -516,9 +514,9 @@ body {
       height: auto; }
   .exhibition-link {
     display: block; }
-  .exhibition-add__text {
+  .exhibition-add-text {
     margin-left: 11px; }
-  .exhibition-add__link {
+  .exhibition-add-link {
     position: absolute;
     opacity: 0;
     top: 34%;
@@ -536,7 +534,7 @@ body {
     text-decoration: none;
     padding: 10px 16px 8px 13px;
     border: 1px solid #fff; }
-    .exhibition-add__link:hover {
+    .exhibition-add-link:hover {
       -webkit-filter: brightness(75%);
               filter: brightness(75%);
       -webkit-box-shadow: 3px 3px 15px #fff;
@@ -925,7 +923,7 @@ body {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .top-title {
-    margin-top: 50px; } }
+    margin-top: 60px; } }
 
 .filter {
   display: -webkit-box;
@@ -1504,7 +1502,7 @@ body {
   position: relative;
   margin-bottom: 25px;
   top: -65px;
-  height: 601px;
+  min-height: 536px;
   background-color: #fff;
   text-align: center;
   border: 1px solid #e5e5e5; }
@@ -1576,7 +1574,7 @@ body {
           right: calc(50% - 90px);
           bottom: -32px; } }
   .lot__description-link {
-    margin: 49px auto 0;
+    margin: 49px auto 65px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1618,5 +1616,27 @@ body {
       font-size: 10px;
       position: relative;
       right: -41px; } }
+
+.header {
+  background-color: #222; }
+
+.nav-link__svg {
+  fill: #fff; }
+
+.page-title {
+  background-color: #f1e4e6;
+  min-height: 148px; }
+
+.carousel-control-prev {
+  background-image: url(../img/demonstration-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -80px; }
+
+.carousel-control-next {
+  background-image: url(../img/demonstration-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -80px; }
 
 /*# sourceMappingURL=style.css.map */

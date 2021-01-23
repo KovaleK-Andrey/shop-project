@@ -19,7 +19,7 @@
     }
 
     &__item-name {
-        padding-top: 104px;
+        /* padding-top: 104px; */
         @include font (16px, 1.2, 400);
         color: $white-color;
         text-transform: uppercase;
@@ -55,20 +55,10 @@
 
         &-content {
             position: absolute;
-            top: 0;
-            left: calc(50% - 60.5px);
-
-            @include netbook {
-                top: -14px;
-            }
-
-            @include table {
-                top: -42px;
-            }
-
-            @include phone {
-                top: 30px;
-            }
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         &-img {
@@ -103,25 +93,15 @@
         }
     }
 }
-.stock-first {
 
-    &__content {
-        left: calc(50% - 75px);
-    }
-}
 .stock-last {
     padding-top: 30px;
 
     &__content {
-        top: -40px;
-        left: calc(50% - 80px);
+        
 
         @include phone {
             display: none;
-        }
-        
-        @include netbook {
-            top: -16px;
         }
     }
 

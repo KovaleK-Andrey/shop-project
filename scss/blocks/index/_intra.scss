@@ -1,7 +1,8 @@
 .intra {
     display: flex;
     position: relative;
-
+    overflow: hidden;
+    
     &__img {
         @include netbook {
             width: 50%;
@@ -43,6 +44,9 @@
 
     &__content-title {
         position: relative;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
         color: $header-bg;
         padding: 0 0 0 16px;
         @include font(48px, 43px, 900);
@@ -83,27 +87,17 @@
 
     &__content {
         width: 100%;
-        padding: 335px 0 0 64px;
+        min-height: 363px;
         background-color: $grey-pink-bg;
-
-        @include netbook {
-            padding: 183px 0 0 60px;
-        }
-
-        @include table {
-            padding: 138px 0 0 40px;
-        }
-
-        @include phone {
-            padding: 148px 0 149px 56px;
-        }
     }
 
     &__menu {
-        width: 232px;
-        height: 765px;
+        max-width: 232px;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
         background: $white-color;
-        box-shadow: 0 18px 33px $grey-light-color;
+        box-shadow: 0 15px 20px $grey-light-color;
         position: absolute;
         top: 0;
         right: 0;
@@ -162,4 +156,10 @@
             transition: .2s linear;
         }
     }
+}
+
+.show {
+    /* transform: translateX(0); */
+    visibility: unset;
+    transition: .6s linear;
 }

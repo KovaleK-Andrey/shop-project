@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: 25px;
     top: -65px;
-    height: 601px;
+    min-height: 536px;
     background-color: $white-color;
     text-align: center;
     border: 1px solid $grey-shadow-color;
@@ -83,7 +83,7 @@
     }
 
     &-link {
-        margin: 49px auto 0;
+        margin: 49px auto 65px;
         display: flex;
         align-items: center;
         width: 211px;
