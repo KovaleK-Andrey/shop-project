@@ -244,8 +244,9 @@
 
     &-price {
         padding-left: 20px;
+
         &--pink {
-            color:$pink-color;
+            color: $pink-color;
             font-weight: 700;
         }
     }
@@ -269,7 +270,7 @@
             background: $grey-shadow-color;
         }
     }
-    
+
     &-link {
 
         display: inline-block;
@@ -289,9 +290,42 @@
             outline: 1px solid $pink-color;
             transition: .2s linear;
         }
-        
+
         @include phone {
             padding: 15px 32px;
         }
+    }
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }

@@ -11,13 +11,13 @@
     align-items: center;
 
     &-btn {
-        
+
         width: 47px;
         height: 47px;
         background: $grey-shadow-color;
         border: none;
         outline: none;
-        
+
         &:hover,
         &:focus {
             cursor: pointer;
@@ -25,7 +25,7 @@
             transition: background-color .2s linear;
         }
     }
-    
+
     @include phone {
         min-height: 624px
     }

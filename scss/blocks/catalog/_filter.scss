@@ -1,5 +1,4 @@
-
-.filter  {
+.filter {
     display: flex;
     align-items: center;
     min-height: 85px;
@@ -24,8 +23,8 @@
         &:hover,
         &:focus,
         &:active {
-            fill:  $pink-color;
-            color:  $pink-color;
+            fill: $pink-color;
+            color: $pink-color;
             transition: .2s linear;
         }
     }
@@ -50,6 +49,7 @@
 
         &-item {
             display: flex;
+
             @include phone {
                 margin-left: 10px;
             }
@@ -78,6 +78,7 @@
         }
     }
 }
+
 #filter__svgmenu {
     width: 15px;
 
@@ -96,7 +97,7 @@
     margin-top: 48px;
     margin-bottom: 96px;
     align-items: center;
-    
+
     @include table {
         margin: 40px auto 63px;
     }

@@ -1,5 +1,5 @@
 .registration {
-    
+
     @include flex-spbn;
 
     @include phone {
@@ -12,7 +12,7 @@
         @include phone {
             margin: 0 auto;
         }
-    }    
+    }
 
     &-form {
         margin-top: 64px;
@@ -58,7 +58,7 @@
     &__input-sex {
         display: none;
 
-        &:checked + .registration__label-sex:before {
+        &:checked+.registration__label-sex:before {
             background: $black-color;
         }
     }
@@ -210,6 +210,6 @@
 }
 
 .registration-btn__svg:nth-child(1) {
-    margin-left: 20px; 
+    margin-left: 20px;
     fill: $white-color;
 }
