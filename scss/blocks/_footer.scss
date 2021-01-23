@@ -21,25 +21,20 @@
         }
     }
 
-    &__content-img {
-        margin: 97px 0 0 120px;
+    &__content-review {
+        margin-top: 89px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 360px;
+        width: 100%;
 
         @include table {
-            margin: 54px 0 0 120px;
+            margin: 56px auto 0;
         }
 
         @include phone {
-            margin: 54px 0 0 120px;
-        }
-    }
-
-    &__content-review {
-        max-width: 360px;
-        width: 100%;
-        margin: 0 auto;
-
-        @include table {
-            margin: 0 auto;
+            margin: 56px auto 0;
         }
     }
 
@@ -100,13 +95,12 @@
     }
 
     &__subscribe-input {
-        width: 322px;
-        height: 49px;
+        width: 72%;
+        padding: 20px;
         background-color: $grey-shadow-color;
         border: none;
         border-radius: 30px 0px 0px 30px;
         outline: none;
-        padding-left: 20px;
         font-size: 14px;
         font-family: 'Lato', 'Arial', sans-serif;
 
@@ -127,13 +121,27 @@
     }
 
     &__subscribe-area {
+        display: flex;
         margin-top: 30px;
+        max-width: 356px;
+        width: 100%;
+        min-height: 49px;
+
+        @include table {
+            margin: 27px auto 0;
+        }
+
+        @include phone {
+            margin: 22px auto 0;
+        }
     }
 
+
+
     &__subscribe-btn {
-        width: 100px;
-        height: 49px;
-        margin-left: -6px;
+        word-break: break-word;
+        width: 28%;
+        padding: 16px 8px;
         font-size: 14px;
         font-family: 'Lato', 'Arial', sans-serif;
         border: none;

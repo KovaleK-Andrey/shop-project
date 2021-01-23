@@ -1,15 +1,23 @@
 .filter {
-    display: flex;
-    align-items: center;
-    min-height: 85px;
 
     @include table {
+        width: 92%;
         min-height: 45px;
     }
 
-    &-menu {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        margin-top: 51px;
+
+        @include table {
+            margin-top: 24px;
+            justify-content: space-between;
+        }
+
         @include phone {
-            margin-left: -9px;
+            margin-top: 24px;
+            justify-content: space-between;
         }
     }
 
@@ -40,19 +48,9 @@
     }
 
     &__clarification {
-        margin-left: 290px;
-
-        @include phone {
-            margin-left: 0;
-            padding-bottom: 15px;
-        }
 
         &-item {
             display: flex;
-
-            @include phone {
-                margin-left: 10px;
-            }
         }
 
         &-link {
@@ -73,7 +71,7 @@
 
             @include phone {
                 @include font(12px, 1.2, 400);
-                margin-left: 24px;
+                margin-left: 10px;
             }
         }
     }

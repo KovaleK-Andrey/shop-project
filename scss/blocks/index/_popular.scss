@@ -10,19 +10,18 @@
     }
 
     &__catalog {
-
-        margin-top: 30px;
-
+        margin-top: 48px;
+        
         @include netbook {
             margin-top: 55px;
         }
 
         @include table {
-            margin-top: 55px;
+            margin-top: 23px;
         }
 
         @include phone {
-            margin-top: 47px;
+            margin-top: 23px;
         }
     }
 
