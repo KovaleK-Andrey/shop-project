@@ -1,4 +1,5 @@
 .shopping__cart {
+
     @include flex-spbn;
 
     @include table {
@@ -49,6 +50,7 @@
     }
 
     &-details {
+
         max-width: 262px;
         width: 100%;
         height: auto;
@@ -67,6 +69,7 @@
     }
 
     &-title {
+
         margin-top: 22px;
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
@@ -78,6 +81,7 @@
     }
 
     &-description {
+
         margin-top: 5px;
         @include font(22px, 1.2, 400);
         color: $grey-text-color;
@@ -111,6 +115,7 @@
     }
 
     &-button {
+
         margin: 72px 0 128px;
         @include flex-spbn;
 
@@ -127,6 +132,7 @@
     }
 
     &-btn {
+
         text-transform: uppercase;
         @include font(14px, 1.2, 300);
         background: $white-color;
@@ -180,6 +186,7 @@
     }
 
     &-input {
+
         display: inline-block;
         width: 100%;
         @include font(13px, 1.2, 300);
@@ -204,8 +211,14 @@
         @include table {
             display: flex;
         }
+
+        @include phone {
+            max-width: 360px;
+            margin: 0 auto;
+        }
     }
 }
+
 .total {
     margin-top: 57px;
     padding: 42px;
@@ -238,6 +251,7 @@
     }
 
     &-grand {
+
         position: relative;
         text-align: right;
         margin-top: 12px;
@@ -257,6 +271,7 @@
     }
     
     &-link {
+
         display: inline-block;
         margin-top: 39px;
         @include font(16px, 1.2, 300);

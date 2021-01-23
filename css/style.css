@@ -55,7 +55,7 @@ table {
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  border: 0;
+  border: none;
   clip: rect(0 0 0 0);
 }
 
@@ -399,7 +399,6 @@ body {
 }
 
 .show {
-  /* transform: translateX(0); */
   visibility: unset;
   transition: .6s linear;
 }
@@ -433,7 +432,6 @@ body {
 }
 
 .stock__item-name {
-  /* padding-top: 104px; */
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
@@ -450,8 +448,8 @@ body {
 }
 
 .stock__item {
-  width: 360px;
-  height: 260px;
+  width: 31.57%;
+  height: 100%;
   text-align: center;
   position: relative;
 }
@@ -489,19 +487,21 @@ body {
 @media (min-width: 1024px) and (max-width: 1200px) {
   .stock__item-img {
     width: 100%;
+    height: auto;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .stock__item-img {
     width: 100%;
+    height: auto;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
   .stock__item-img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -528,7 +528,13 @@ body {
 }
 
 .stock-last {
-  padding-top: 30px;
+  margin-top: 26px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .stock-last {
+    margin-top: 14px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -625,7 +631,7 @@ body {
 
 .popular__more {
   display: block;
-  width: 211px;
+  max-width: 211px;
   margin: 48.5px auto 95.5px;
   padding: 14px 34px;
   font-size: 16px;
@@ -676,9 +682,9 @@ body {
 
 .exhibition-item {
   position: relative;
-  width: 360px;
+  width: 31.57%;
   min-height: 581px;
-  height: auto;
+  height: 100%;
   margin-top: 17px;
   background: #f8f8f8;
 }
@@ -695,6 +701,12 @@ body {
   transition: .2s linear;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .exhibition-item {
+    width: 46.8%;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .exhibition-item {
     width: 100%;
@@ -703,7 +715,7 @@ body {
 
 .exhibition-item__img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .exhibition-link {
@@ -1397,6 +1409,12 @@ body {
   max-width: 360px;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .registration-content {
+    margin: 0 auto;
+  }
+}
+
 .registration-form {
   margin-top: 64px;
 }
@@ -1439,7 +1457,7 @@ body {
   }
 }
 
-.registration__input-name:hover, .registration__input-name:focus, .registration__input-name:active {
+.registration__input-name:hover, .registration__input-name:focus {
   outline: 1px solid #f5566b;
   transition: .2s linear;
 }
@@ -1493,7 +1511,7 @@ body {
 
 .registration-btn {
   display: block;
-  width: 167px;
+  max-width: 167px;
   margin-bottom: 96px;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 14px;
@@ -1550,7 +1568,8 @@ body {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .registration__perks {
-    margin: 0 0 96px 0;
+    margin: 0 auto 96px;
+    max-width: 360px;
   }
 }
 
@@ -1900,6 +1919,13 @@ body {
   }
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .shopping__cart-address {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
 .total {
   margin-top: 57px;
   padding: 42px;
@@ -2004,15 +2030,15 @@ body {
 .demonstration-btn {
   width: 47px;
   height: 47px;
-  background: rgba(42, 42, 42, 0.15);
+  background: #e5e5e5;
   border: none;
   outline: none;
 }
 
-.demonstration-btn:hover {
+.demonstration-btn:hover, .demonstration-btn:focus {
   cursor: pointer;
-  background-color: #e4b2ba;
-  transition: .2s linear;
+  background-color: #f1e4e6;
+  transition: background-color .2s linear;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -2110,14 +2136,14 @@ body {
   width: 641px;
   height: 1px;
   background-color: #e5e5e5;
-  right: calc(50% - 320px);
+  right: 50%;
+  transform: translate(50%);
   bottom: -65px;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
   .lot__description-price::after {
     width: 51%;
-    right: calc(50% - 90px);
     bottom: -32px;
   }
 }
@@ -2127,7 +2153,7 @@ body {
   display: flex;
   align-items: center;
   width: 211px;
-  height: 47px;
+  min-height: 47px;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.2;

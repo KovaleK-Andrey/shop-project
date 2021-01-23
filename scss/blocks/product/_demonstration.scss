@@ -1,4 +1,5 @@
 .demonstration {
+
     width: 100%;
     min-height: 777px;
     height: auto;
@@ -10,16 +11,18 @@
     align-items: center;
 
     &-btn {
+        
         width: 47px;
         height: 47px;
-        background: rgba(42, 42, 42, 0.15);
+        background: $grey-shadow-color;
         border: none;
         outline: none;
         
-        &:hover {
+        &:hover,
+        &:focus {
             cursor: pointer;
-            background-color: rgb(228, 178, 186);
-            transition: .2s linear;
+            background-color: $grey-pink-bg;
+            transition: background-color .2s linear;
         }
     }
     

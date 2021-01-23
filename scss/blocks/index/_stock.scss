@@ -1,4 +1,5 @@
 .stock {
+    
     margin-top: 63px;
     
     @include netbook {
@@ -19,7 +20,6 @@
     }
 
     &__item-name {
-        /* padding-top: 104px; */
         @include font (16px, 1.2, 400);
         color: $white-color;
         text-transform: uppercase;
@@ -32,12 +32,14 @@
     }
 
     &__item {
-        width: 360px;
-        height: 260px;
+
+        width: 31.57%;
+        height: 100%;
         text-align: center;
         position: relative;
 
         &:last-child {
+
             width: 100%;
 
             @include netbook {
@@ -62,17 +64,20 @@
         }
 
         &-img {
+
             @include netbook {
                 width: 100%;
+                height: auto;
             }
 
             @include table {
                 width: 100%;
+                height: auto;
             }
 
             @include phone {
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
         }
 
@@ -95,10 +100,13 @@
 }
 
 .stock-last {
-    padding-top: 30px;
+    margin-top: 26px;
+
+    @include table {
+        margin-top: 14px;
+    }
 
     &__content {
-        
 
         @include phone {
             display: none;
