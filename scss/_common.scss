@@ -61,6 +61,7 @@ table {
 
 body {
    width: 1600px;
+   position: relative;
 
    @include netbook {
       width: 100%;
@@ -77,10 +78,8 @@ body {
    margin: 0 auto;
    background-color: $white-color;
    font-family: 'Lato', 'Arial', sans-serif;
-   font-size: 30px;
+   @include font (30px, 1.2, 400);
    font-style: normal;
-   font-weight: 400;
-   line-height: 1.2;
 }
 
 .container {

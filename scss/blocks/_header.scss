@@ -56,7 +56,77 @@
         @include phone {
             margin: 0;
         }
-    }     
+    }
+
+    &__nav {
+        max-width: 232px;
+        width: 100%;
+        height: auto;
+        visibility: hidden;
+        background: $white-color;
+        box-shadow: 0 15px 20px $grey-light-color;
+        position: absolute;
+        right: 0;
+        top: 75px;
+
+        @include netbook {
+            display: none;
+        }
+
+        @include table {
+            display: none;
+        }
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    &__nav-title {
+        @include font(14px, 1.2, 700);
+        color: $black-color;
+        text-transform: uppercase;
+        margin-top: 37px;
+        margin-left: 34px;
+    }
+
+    &__nav-item {
+        margin: 22px 0 0 34px;
+
+        &:last-child {
+            padding-bottom: 202px;
+        }
+    }
+
+    &__nav-mainlink {
+        display: block;
+        text-transform: uppercase;
+        @include font(14px, 1.2, 400);
+        color: $pink-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-shadow: 0 1px 26px $pink-color;
+            transition: .2s linear;
+        }
+    }
+
+    &__nav-link {
+        display: block;
+        @include font(14px, 1.2, 400);
+        text-transform: capitalize;
+        color: $grey-text-color;
+        text-decoration: none;
+        margin-left: 19.5px;
+        margin-top: 12px;
+
+        &:hover {
+            text-decoration: underline;
+            text-shadow: 0 1px 26px $grey-text-color;
+            transition: .2s linear;
+        }
+    }
 }
 
 .header__menu-account {
@@ -71,4 +141,10 @@
     @include phone {
         display: none;
     }
+}
+
+.show {
+    visibility: unset;
+    transition: .6s linear;
+    z-index: 2;
 }

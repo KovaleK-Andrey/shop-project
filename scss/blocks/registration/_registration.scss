@@ -1,4 +1,5 @@
 .registration {
+
     @include flex-spbn;
 
     @include phone {
@@ -7,7 +8,11 @@
 
     &-content {
         max-width: 360px;
-    }    
+
+        @include phone {
+            margin: 0 auto;
+        }
+    }
 
     &-form {
         margin-top: 64px;
@@ -28,6 +33,7 @@
     }
 
     &__input-name {
+
         padding: 13px 16px;
         margin-top: 20px;
         font-family: 'Lato', 'Arial', sans-serif;
@@ -43,8 +49,7 @@
         }
 
         &:hover,
-        &:focus,
-        &:active {
+        &:focus {
             outline: 1px solid rgb(245, 86, 107);
             transition: .2s linear;
         }
@@ -59,6 +64,7 @@
     }
 
     &__label-sex {
+
         position: relative;
         margin-top: 33.5px;
         display: inline-block;
@@ -94,8 +100,9 @@
     }
 
     &-btn {
+
         display: block;
-        width: 167px;
+        max-width: 167px;
         margin-bottom: 96px;
         font-family: 'Lato', 'Arial', sans-serif;
         @include font(14px, 1.2, 400);
@@ -126,6 +133,7 @@
     }
 
     &__perks {
+
         max-width: 652px;
         width: 100%;
         margin-top: 64px;
@@ -140,7 +148,8 @@
         }
 
         @include phone {
-            margin: 0 0 96px 0;
+            margin: 0 auto 96px;
+            max-width: 360px;
         }
 
         &-title {
@@ -171,6 +180,7 @@
         }
 
         &-list {
+
             position: relative;
             @include font(24px, 1.2, 300);
             margin-top: 16px;
@@ -200,6 +210,6 @@
 }
 
 .registration-btn__svg:nth-child(1) {
-    margin-left: 20px; 
+    margin-left: 20px;
     fill: $white-color;
 }

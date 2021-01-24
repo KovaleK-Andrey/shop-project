@@ -1,4 +1,5 @@
 .shopping__cart {
+
     @include flex-spbn;
 
     @include table {
@@ -49,6 +50,7 @@
     }
 
     &-details {
+
         max-width: 262px;
         width: 100%;
         height: auto;
@@ -67,6 +69,7 @@
     }
 
     &-title {
+
         margin-top: 22px;
         @include font(24px, 1.2, 400);
         text-transform: uppercase;
@@ -78,6 +81,7 @@
     }
 
     &-description {
+
         margin-top: 5px;
         @include font(22px, 1.2, 400);
         color: $grey-text-color;
@@ -111,6 +115,7 @@
     }
 
     &-button {
+
         margin: 72px 0 128px;
         @include flex-spbn;
 
@@ -127,6 +132,7 @@
     }
 
     &-btn {
+
         text-transform: uppercase;
         @include font(14px, 1.2, 300);
         background: $white-color;
@@ -180,6 +186,7 @@
     }
 
     &-input {
+
         display: inline-block;
         width: 100%;
         @include font(13px, 1.2, 300);
@@ -204,8 +211,14 @@
         @include table {
             display: flex;
         }
+
+        @include phone {
+            max-width: 360px;
+            margin: 0 auto;
+        }
     }
 }
+
 .total {
     margin-top: 57px;
     padding: 42px;
@@ -231,13 +244,15 @@
 
     &-price {
         padding-left: 20px;
+
         &--pink {
-            color:$pink-color;
+            color: $pink-color;
             font-weight: 700;
         }
     }
 
     &-grand {
+
         position: relative;
         text-align: right;
         margin-top: 12px;
@@ -255,8 +270,9 @@
             background: $grey-shadow-color;
         }
     }
-    
+
     &-link {
+
         display: inline-block;
         margin-top: 39px;
         @include font(16px, 1.2, 300);
@@ -274,9 +290,42 @@
             outline: 1px solid $pink-color;
             transition: .2s linear;
         }
-        
+
         @include phone {
             padding: 15px 32px;
         }
+    }
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }

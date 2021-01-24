@@ -1,5 +1,7 @@
 .popular {
+
     &-margin {
+
         margin-bottom: 128px;
 
         @include phone {
@@ -8,22 +10,23 @@
     }
 
     &__catalog {
-        margin-top: 30px;
-
+        margin-top: 48px;
+        
         @include netbook {
             margin-top: 55px;
         }
 
         @include table {
-            margin-top: 55px;
+            margin-top: 23px;
         }
 
         @include phone {
-            margin-top: 47px;
+            margin-top: 23px;
         }
     }
 
     &__title {
+
         margin-top: 97px;
         text-align: center;
         text-transform: capitalize;
@@ -51,8 +54,9 @@
     }
 
     &__more {
+
         display: block;
-        width: 211px;
+        max-width: 211px;
         margin: 48.5px auto 95.5px;
         padding: 14px 34px;
         @include font(16px, 1.2, 400);
@@ -62,6 +66,7 @@
         border: 1px solid $pink-color;
 
         &:hover {
+
             color: $white-color;
             background: $pink-color;
             transition: .2s linear;
@@ -79,6 +84,7 @@
 }
 
 .exhibition {
+
     @include flex-spbn;
     flex-wrap: wrap;
 
@@ -91,10 +97,11 @@
     }
 
     &-item {
+
         position: relative;
-        width: 360px;
+        width: 31.57%;
         min-height: 581px;
-        height: auto;
+        height: 100%;
         margin-top: 17px;
         background: $grey-bg-color;
 
@@ -110,13 +117,17 @@
             transition: .2s linear;
         }
 
+        @include table {
+            width: 46.8%;
+        }
+
         @include phone {
             width: 100%;
         }
 
         &__img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 
@@ -129,6 +140,7 @@
     }
 
     &-add-link {
+
         position: absolute;
         opacity: 0;
         top: 34%;
@@ -149,6 +161,7 @@
     }
 
     &__link-title {
+
         text-decoration: none;
         @include font(13px, 1.2, 400);
         color: $black-color;
@@ -175,16 +188,16 @@
 
     &-price {
         @include font(16px, 1.2, 400);
-        color:$pink-color;
+        color: $pink-color;
         margin: 18px 0 0 18px;
         padding-bottom: 20px;
     }
-    
+
     &-lastitem {
         @include netbook {
             display: none;
         }
-        
+
         @include table {
             display: none;
         }
