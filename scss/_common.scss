@@ -61,6 +61,7 @@ table {
 
 body {
    width: 1600px;
+   position: relative;
 
    @include netbook {
       width: 100%;
